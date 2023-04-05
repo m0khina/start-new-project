@@ -19,11 +19,6 @@ const LearnMore = () => {
     }
 
 
-
-    // useEffect(() => {
-    //
-    // },[active1, active2])
-
     return (
         <div id="learnMore">
             <div className="container">
@@ -38,6 +33,8 @@ const LearnMore = () => {
 
                         }} className="learnMore--cards__card1"
                         onClick={getActive1}>
+                        <div className="learnMore--cards__card1"
+                        onClick={getActive}>
                             <h1>Обычный</h1>
                             <div className="learnMore--cards__card1--inputMonth">
                                 <input type="radio" id="radioMonth"/>
@@ -63,6 +60,7 @@ const LearnMore = () => {
                         }}
                              className="learnMore--cards__card1"
                         onClick={getActive2}>
+                        <div className="learnMore--cards__card1">
                             <h1>Интенсив</h1>
                             <div className="learnMore--cards__card1--inputMonth">
                                 <input type="radio" id="radioMonth"/>
@@ -126,6 +124,19 @@ const LearnMore = () => {
                             </div>
                             <div className="learnMore--info__fraces--icon" >
                                 <h2>{active2 ? <MdClose/> : <BsCheck2/> }</h2>
+                                <h2><MdClose/></h2>
+                                <p>Курс по чтению языка тела</p>
+                            </div>
+                            <div className="learnMore--info__fraces--icon" >
+                                <h2><MdClose/></h2>
+                                <p>Курс по накоплению средств с выполотой долгов</p>
+                            </div>
+                            <div className="learnMore--info__fraces--icon" >
+                                <h2><MdClose/></h2>
+                                <p>Курс по быстрому карьерному росту</p>
+                            </div>
+                            <div className="learnMore--info__fraces--icon" >
+                                <h2><MdClose/></h2>
                                 <p>Курс по одолеванию страха потери</p>
                             </div>
                         </div>

@@ -9,6 +9,7 @@ const OpenAcc = () => {
 
     return (
         <div>
+                <div className="item--div"></div>
             <div onClick={() => {
                 setSelected(!selected)
                 setSelected2(false)
@@ -31,6 +32,7 @@ const OpenAcc = () => {
                     }} className="item--icon" />
                 </div>
             </div>
+            <div className="item--div"></div>
             <div onClick={() => {
                 setSelected2(!selected2)
                 setSelected(false)
@@ -54,6 +56,8 @@ const OpenAcc = () => {
                     }} className="item--icon" />
                 </div>
             </div>
+            <div className="item--div"></div>
+
             <div onClick={() => {
                 setSelected3(!selected3)
                 setSelected(false)
@@ -65,7 +69,6 @@ const OpenAcc = () => {
                     transition: ".6s"
                 }} className="item">
                 <div className="item--title__div"></div>
-
                 <div className="item--title">
 
                     <div>
@@ -78,6 +81,7 @@ const OpenAcc = () => {
                     }} className="item--icon" />
                 </div>
             </div>
+            <div className="item--div"></div>
             <div onClick={() => {
                 setSelected4(!selected4)
                 setSelected(false)
@@ -100,6 +104,19 @@ const OpenAcc = () => {
                 </div>
 
             </div>
+
+                    <div>
+                        <h4>Откуда мне узнавать про новые статьи и курсы?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi eius enim
+                            fuga, id laboriosam laudantium magni quidem sed voluptates?</p>
+                    </div>
+                    <MdArrowBackIosNew style={{
+                        transform: selected4 ? "rotate(90deg)" : ""
+                    }} className="item--icon" />
+                </div>
+
+            </div>
+            <div className="item--div"></div>
         </div>
     );
 };
