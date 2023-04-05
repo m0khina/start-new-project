@@ -20,6 +20,7 @@ const OpenAcc = () => {
                     height: selected ? "200px" : "",
                     transition: ".6s"
                 }} className="item">
+                <div className="item--title__div"></div>
                 <div className="item--title">
                     <div>
                         <h4>Сколько всего насчитывается материала всего</h4>
@@ -42,6 +43,7 @@ const OpenAcc = () => {
                     height: selected2 ? "200px" : "",
                     transition: ".6s"
                 }} className="item">
+                <div className="item--title__div"></div>
                 <div className="item--title">
                     <div>
                         <h4>Потеряю ли я оставшесея время если перейду на другой до окончания этого?</h4>
@@ -66,7 +68,7 @@ const OpenAcc = () => {
                     height: selected3 ? "200px" : "",
                     transition: ".6s"
                 }} className="item">
-
+                <div className="item--title__div"></div>
                 <div className="item--title">
 
                     <div>
@@ -80,7 +82,6 @@ const OpenAcc = () => {
                 </div>
             </div>
             <div className="item--div"></div>
-
             <div onClick={() => {
                 setSelected4(!selected4)
                 setSelected(false)
@@ -92,6 +93,17 @@ const OpenAcc = () => {
                     transition: ".6s"
                 }} className="item">
                 <div className="item--title">
+                    <div className="item--title__div"></div>
+                    <MdArrowBackIosNew style={{
+                        transform: selected4 ? "rotate(90deg)" : ""
+                    }} className="item--icon" />
+                    <h4>Откуда мне узнавать про новые статьи и курсы?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi eius enim
+                        fuga, id laboriosam laudantium magni quidem sed voluptates?</p>
+                    <div style={{ marginTop: "20px" }} className="item--title__div"></div>
+                </div>
+
+            </div>
 
                     <div>
                         <h4>Откуда мне узнавать про новые статьи и курсы?</h4>

@@ -24,6 +24,48 @@
         }
       }
 
+      .item {
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 90px;
+        width: 732px;
+        overflow: hidden;
+
+        &--icon {
+          transform: rotate(-90deg);
+          color: #FFFFFF;
+          font-size: 25px;
+        }
+
+        &--title {
+          cursor: pointer;
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+
+          h4 {
+            padding-bottom: 10px;
+            text-align: left;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 42px;
+            color: #FFFFFF;
+          }
+
+          p {
+            font-size: 20px;
+            color: white;
+          }
+
+          &__div {
+            width: 700px;
+            height: 1px;
+            background: #FFFFFF;
+          }
+        }
+      }
     
     }
   }
