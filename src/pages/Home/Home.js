@@ -11,8 +11,6 @@ const Home = () => {
             <Staty/>
             <Follow/>
             <Accardeon/>
-            <Accardeon/>
-            <Follow/>
         </div>
     );
 };

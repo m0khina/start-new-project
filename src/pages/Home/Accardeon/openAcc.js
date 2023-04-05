@@ -114,10 +114,6 @@ const OpenAcc = () => {
                         transform: selected4 ? "rotate(90deg)" : ""
                     }} className="item--icon" />
                 </div>
-
-            </div>
-            <div className="item--div"></div>
-        </div>
     );
 };
 
