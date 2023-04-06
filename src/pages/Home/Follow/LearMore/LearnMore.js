@@ -69,7 +69,7 @@ const LearnMore = () => {
                                     <label htmlFor="radioYear">Ежегодно</label>
                                 </div>
                                 <div className="learnMore--cards__card1--icons" >
-                                    <h2><BsCheckLg /></h2>
+                                    <h2> <BsCheckLg /></h2>
                                     <p>Все новые статьи</p>
                                 </div>
                                 <div className="learnMore--cards__card1--icons">
