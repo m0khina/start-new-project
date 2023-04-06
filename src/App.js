@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Index from "./pages/Login/Index";
 import Books from "./pages/Books/Books";
 import LearnMore from "./pages/Home/Follow/LearMore/LearnMore";
+import Buy from "./pages/Home/Follow/Buy/Buy"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/login" element={<Index/>}/>
                 <Route path="/books" element={<Books/>}/>
                 <Route path="/learn-more" element={<LearnMore/>}/>
+                <Route path="/buy" element={<Buy/>}/>
             </Routes>
             <Footer/>
         </div>

@@ -4,6 +4,7 @@ import OpenAcc from "./openAcc";
 import Accordion from "../../../assets/img/accordion.png"
 import BookL from "../../../assets/img/Accortitle.svg"
 import BookR from "../../../assets/img/accorimg.png"
+import bg from "./../../../assets/img/logo.svg"
 
 const Accardeon = () => {
 
@@ -20,6 +21,7 @@ const Accardeon = () => {
                             <OpenAcc />
                         </div>
                     </div>
+                    <img className='wrapper--img1' src={bg} alt='img' />
                 </div>
             </div>
         </div>

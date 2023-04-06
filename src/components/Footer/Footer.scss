@@ -2,10 +2,10 @@
     padding: 20px 0;
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid #FFFFFF;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-top: 1px solid white;
     font-family: 'Montserrat', sans-serif;
-
+    overflow: hidden;
     .footer {
         position: relative;
         z-index: 9;
@@ -16,23 +16,15 @@
             cursor: pointer;
         }
 
-        &--img1 {
-            position: absolute;
-            filter: blur(1px);
-            transform: rotate(26.59deg);
-            width: 164px;
-            top: -100px;
-            left: 320px;
-            z-index: -9;
-        }
+       
 
-        &--img2{
+        &--img2 {
             position: absolute;
             width: 73px;
             filter: blur(2px);
-transform: rotate(-43.1deg);
-bottom: -40px;
-right: 200px;
+            transform: rotate(-43.1deg);
+            bottom: -40px;
+            right: 200px;
         }
 
         &--cards {
