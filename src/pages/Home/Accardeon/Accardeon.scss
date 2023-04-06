@@ -1,6 +1,7 @@
 #wrapper {
   .wrapper {
     padding: 160px 0;
+    position: relative;
     h1 {
       font-weight: 600;
       font-size: 40px;
@@ -17,10 +18,13 @@
         margin-left: -7%;
       }
 
+      
+
       &__title {
         &--bookL {
-          z-index: -99;
-          margin-right: 100px;
+          position: absolute;
+          top: 412px;
+          right: 416px;
         }
       }
 
@@ -44,7 +48,7 @@
       }
 
       &--accordion {
-        display: flex;
+        display:  flex;
         align-items: center;
         justify-content: space-between;
 

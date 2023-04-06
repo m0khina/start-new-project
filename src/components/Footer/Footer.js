@@ -23,6 +23,9 @@ const Footer = () => {
         }} id="footer">
             <div className="container">
                 <div className="footer">
+
+                    <img className='footer--img1' src={bg} alt='img' />
+                    <img className='footer--img2' src={bg} alt='img' />
                     <div className="footer--footNav">
                         <div className="footer--footNav__selfBook">
                             <div className=" java flex flex-col items-center mt-3">

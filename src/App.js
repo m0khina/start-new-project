@@ -10,22 +10,22 @@ import LearnMore from "./pages/Home/Follow/LearMore/LearnMore";
 
 function App() {
 
-  const modal = useSelector(state => state.login)
+    const modal = useSelector(state => state.login)
 
-  return (
-    <div className="App">
-      <Header style={{
-        display: modal ? "none" : "block"
-      }}/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/login" element={<Index/>}/>
-        <Route path="/books" element={<Books/>}/>
-        <Route path="/learn-more" element={<LearnMore/>}/>
-      </Routes>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header style={{
+                display: modal ? "none" : "block"
+            }}/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/login" element={<Index/>}/>
+                <Route path="/books" element={<Books/>}/>
+                <Route path="/learn-more" element={<LearnMore/>}/>
+            </Routes>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

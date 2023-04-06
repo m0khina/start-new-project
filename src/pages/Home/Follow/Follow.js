@@ -21,7 +21,10 @@ const Follow = () => {
                             <p>И получи доступ ко всем нашим материалам и начинай развиватся сейчас вместе со всеми</p>
                         </div>
                         <div className="follow--buttons">
-                            <button className="follow--buttons__followBtn">Подписаться</button>
+                            <NavLink to={"/Buy"}>
+                                <button className="follow--buttons__followBtn">Подписаться</button>
+
+                            </NavLink>
                             <NavLink to={"/learn-more"}>
                                 <button className="follow--buttons__learnBtn">Узнать больше</button>
                             </NavLink>

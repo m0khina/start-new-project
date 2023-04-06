@@ -84,7 +84,7 @@ const OpenAcc = () => {
                 setSelected4(!selected3)
                 setSelected(false)
                 setSelected2(false)
-                setSelected3(false)
+                setSelected3 (false)
             }}
                 style={{
                     height: selected4 ? "200px" : "",
