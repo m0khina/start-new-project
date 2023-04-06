@@ -17,7 +17,9 @@ const Hero = () => {
                     <div className="hero--title">
                         <h1>Само развитие лучше чем школьное обучение</h1>
                         <p>Здесь вы найдете все для само-обучения.</p>
+                        <a href="#wrapper">
                         <button>Подобрать пакет</button>
+                        </a>
                     </div>
                     <div className="hero--img">
                         <img  src={Book} alt="img"/>

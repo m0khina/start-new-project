@@ -4,6 +4,8 @@ import "./LearnMore.scss"
 import { BsCheck2 } from "react-icons/bs"
 import { MdClose } from "react-icons/md"
 import BookBg from "./../../../../assets/img/logo.svg"
+import Accardeon from "./../../Accardeon/Accardeon"
+import { NavLink } from 'react-router-dom';
 
 const LearnMore = () => {
     const [active1, setActive1] = useState(false)
@@ -50,7 +52,9 @@ const LearnMore = () => {
                                 <p>Все мастер классы по саморозвитию</p>
                             </div>
                             <h2 className="learnMore--cards__card1--prace">Цена: <b>225$</b></h2>
+                            <NavLink to={"/buy"}>
                             <button className="learnMore--cards__card1--btnFollow">Подписаться</button>
+                            </NavLink>
                         </div>
 
                         <div style={{
@@ -93,7 +97,9 @@ const LearnMore = () => {
                                 <p>Курс по одолеванию страха потери</p>
                             </div>
                             <h2 className="learnMore--cards__card1--prace2">Цена: <b>750$</b></h2>
+                            <NavLink to={"/buy"}>
                             <button className="learnMore--cards__card1--btnFollow">Подписаться</button>
+                            </NavLink>
                         </div>
 
                     </div>
@@ -134,9 +140,9 @@ const LearnMore = () => {
                         разных успешных людей чтобы получать ежедневные уроки чтобы улучшить жизнь и не
                         только</p>
                 </div>
-
             </div>
 
+            <Accardeon/>
 
         </div>);
 };
