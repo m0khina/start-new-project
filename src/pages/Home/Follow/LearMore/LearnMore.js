@@ -25,7 +25,6 @@ const LearnMore = () => {
                 <div className="learnMore">
                     <p className="learnMore--p">Пакеты / Подробнее о пакетах</p>
                     <h1 className="learnMore--titleh1">ВЫБЕРИТЕ СВОЙ ПАКЕТ УЧАСТИЯ</h1>
-                    <div className="learnMore--book1"><img src={BookBg} alt="" /></div>
                     <p className="learnMore--titleP">Присоединяйтесь к нам и начните свой путь к успеху.</p>
                     <div className="learnMore--cards">
                         <div className="learnMore--cards__card1"

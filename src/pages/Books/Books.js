@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import bookImg from "./../../assets/img/aboutBook.png"
 
 const Books = () => {
-    const [book, setBook] = useState([1,2,3,4])
-    const [book2, setBook2] = useState([1,2,3,4,5,6,7,8])
-   
+    const [book, setBook] = useState([1, 2, 3, 4])
+    const [book2, setBook2] = useState([1, 2, 3, 4, 5, 6, 7, 8])
+
     return (
         <div id="allBooks">
             <div className="container">
@@ -21,24 +21,24 @@ const Books = () => {
                     <div className="allBooks--block">
                         <div className="allBooks--block__first">
                             {
-                                book.map(el=> (
+                                book.map(el => (
                                     <div className="allBooks--block__first--aboutBooks">
-                                            <div className="allBooks--block__first--aboutBooks__title">
-                                                <h1>С какой книги начать?</h1>
-                                                <button>Новое</button>
-                                            </div>
-                                            <div className="allBooks--block__first--aboutBooks__tabs">
-                                                <h3>Полезные статьи</h3>
-                                                <button>Все</button>
-                                                <button>Новое</button>
-                                                <button>Книги</button>
-                                            </div>
-                                            <img src={bookImg} alt="" />
-                                            <div className='allBooks--block__first--aboutBooks__line'/>
-                                            <div className="allBooks--block__first--aboutBooks__date">
-                                                <h3>Автор: Muslim Bolot</h3>
-                                                <h3>Дата: 22.08.22</h3>
-                                            </div>
+                                        <div className="allBooks--block__first--aboutBooks__title">
+                                            <h1>С какой книги начать?</h1>
+                                            <button>Новое</button>
+                                        </div>
+                                        <div className="allBooks--block__first--aboutBooks__tabs">
+                                            <h3>Полезные статьи</h3>
+                                            <button>Все</button>
+                                            <button>Новое</button>
+                                            <button>Книги</button>
+                                        </div>
+                                        <img src={bookImg} alt="" />
+                                        <div className='allBooks--block__first--aboutBooks__line' />
+                                        <div className="allBooks--block__first--aboutBooks__date">
+                                            <h3>Автор: Muslim Bolot</h3>
+                                            <h3>Дата: 22.08.22</h3>
+                                        </div>
                                     </div>
                                 ))
                             }
@@ -55,8 +55,11 @@ const Books = () => {
                                             <button>Книги</button>
                                         </div>
                                         <img src={bookImg} alt="" />
-                                        <div className='allBooks--block__two--aboutBooks__line'/>
-                                        <div className="allBooks--block__two--aboutBooks__date"></div>
+                                        <div className='allBooks--block__two--aboutBooks__line' />
+                                        <div className="allBooks--block__two--aboutBooks__date">
+                                            <h3>Автор: Muslim Bolot</h3>
+                                            <h3>Дата: 22.08.22</h3>
+                                        </div>
                                     </div>
                                 ))
                             }
