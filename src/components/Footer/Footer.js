@@ -10,7 +10,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Tb123 } from "react-icons/tb";
 import { RiVisaLine } from "react-icons/ri";
 import { useSelector } from 'react-redux';
-
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -39,9 +39,9 @@ const Footer = () => {
                             <h3>Быстрые ссылки</h3>
                             <div className="boot ml-2">
                                 <div className="line"></div>
-                                <a><h4>Главная</h4></a>
-                                <a><h4>Школа</h4></a>
-                                <a><h4>О нас</h4></a>
+                                <NavLink to={"/"}><h4>Главная</h4></NavLink>
+                                <NavLink to={"/our-course"}><h4>Школа</h4></NavLink>
+                                <NavLink to={"/about-us"}><h4>О нас</h4></NavLink>
                             </div>
                         </div>
                         <div className="footer--footNav__socials">

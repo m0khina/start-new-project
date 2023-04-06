@@ -38,7 +38,7 @@ const Header = () => {
                         </div>
                         <nav className='header--navbar'>
                             <NavLink to={"/"} >Главная</NavLink>
-                            <NavLink to={"/our-cours"} >Наши курсы</NavLink>
+                            <NavLink to={"/our-course"} >Наши курсы</NavLink>
                             <NavLink to={"/about-us"} >О нас</NavLink>
                         </nav>
                         <NavLink to={"/login"}>
@@ -60,8 +60,8 @@ const Header = () => {
                     }}>
                         <div className="header--nav" >
                             <NavLink to={"/"} >Главная</NavLink>
-                            <NavLink to={"/"} >Наши курсы</NavLink>
-                            <NavLink to={"/"} >О нас</NavLink>
+                            <NavLink to={"/our-course"} >Наши курсы</NavLink>
+                            <NavLink to={"/about-us"} >О нас</NavLink>
                             <button className='header--towBtn'><CiUser className='header--towBtn__icon' />Войти</button>
                         </div>
                     </div>

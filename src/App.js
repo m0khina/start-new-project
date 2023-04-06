@@ -7,6 +7,8 @@ import Index from "./pages/Login/Index";
 import Books from "./pages/Books/Books";
 import LearnMore from "./pages/Home/Follow/LearMore/LearnMore";
 import Buy from "./pages/Home/Follow/Buy/Buy"
+import OurCourse from "./pages/OurCourses/OurCourse";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
                 <Route path="/books" element={<Books/>}/>
                 <Route path="/learn-more" element={<LearnMore/>}/>
                 <Route path="/buy" element={<Buy/>}/>
+                <Route path="/our-course" element={<OurCourse/>}/>
+                <Route path="/about-us" element={<AboutUs/>}/>
             </Routes>
             <Footer/>
         </div>
