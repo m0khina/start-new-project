@@ -566,3 +566,529 @@
   }
 
 }
+
+@media (max-width: 1140px){
+
+}
+@media (max-width: 1200px){
+  #buy{
+    .buy{
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+          position: absolute;
+          left: 634px;
+
+
+        }
+      }
+    }
+  }
+
+}@media (max-width: 1024px){
+  #buy{
+    .buy{
+      margin-left: 146px;
+
+
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+
+        }
+        &__books3{
+          left: -195px;
+        }
+        &__books5{
+          top: -1359px;
+          left: 618px;
+        }
+      }
+    }
+  }
+
+
+}@media (max-width: 999px){
+  #buy{
+    .buy{
+      margin-left: 83px;
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+          left: 543px;
+          width: 32%;
+
+        }
+      }
+    }
+  }
+
+
+}@media (max-width: 992px){
+  #buy{
+    .buy{
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+            &__radio{
+              &--cvv{
+                input{
+                  width: 113px;
+                }
+              }
+            }
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        &__books{
+
+        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 768px){
+  #buy{
+    .buy{
+      margin-left: 26px;
+
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+          left: 520px;
+          width: 25%;
+
+        }
+        &__books2{
+          top: -25px;
+          left: 1px;
+        }
+        &___boos3{
+          left: -66px;
+        }
+
+        &__books5{
+          left: 590px;
+        }
+        &__books6{
+          left: -60px;
+        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 576px){
+  #buy{
+    padding: 139px 0;
+    .buy{
+      &--card{
+        width: 448px;
+        height: 1885px;
+        &__input{
+          &--in{
+            input{
+              padding-left: 21px;
+              background: none;
+              width: 337px;
+            }
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+            flex-direction: column;
+            margin-left: 23px;
+
+          }
+          &--choose{
+            button{
+              width: 333px;
+              height: 44px;
+            }
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+          left: 376px;
+          width: 29%;
+
+        }
+        &__books2{
+          width: 37%;
+        }
+        &__books3{
+          left: 0;
+          width: 9%;
+        }
+        &__books5{
+          left: 327px;
+          top: -1871px;
+        }
+        &__books6{
+          left: -4px;
+          top: -1818px;
+
+        }
+
+      }
+    }
+  }
+
+
+}
+@media (max-width: 450px){
+  #buy{
+    .buy{
+      margin-left: 19px;
+      &--card{
+        width: 337px;
+        &__input{
+          margin-left: 49px;
+
+          &--in{
+            input{
+              width: 239px;
+            }
+
+          }
+          &--check{
+          p{
+            padding: 7px 0;
+          }
+            &__radio{
+              flex-direction: column;
+              align-items: flex-start;
+              input{
+                width: 238px;
+
+              }
+              &--cvv{
+
+                    input{
+                      width: 115px;
+
+
+                }
+
+                margin-top: 17px;
+              input{
+                width: 122px;
+              }
+              }
+            }
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+            margin-left: -9px;
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        &__books{
+
+        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 400px){
+  #buy{
+    .buy{
+      margin-left: 2px;
+
+      &--card{
+        height: 2030px;
+
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+            button{
+              width: 243px;
+            }
+            &__agree{
+              p{
+                font-size: 12px;
+              }
+            }
+
+          }
+        }
+
+      }
+      &--book{
+        position: relative;
+        &__books{
+          left: 272px;
+          width: 29%;
+        }
+        &__books3{
+          left: -39px;
+        }
+        &__books5{
+          left: 241px;        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 380px){
+  #buy{
+    .buy{
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        &__books{
+
+        }
+        &__book3{
+          left: -22px;
+        }
+      }
+    }
+  }
+
+
+}
+@media (max-width: 375px){
+  #buy{
+    height: 2030px;
+
+    .buy{
+      &--card{
+        &__input{
+          &--in{
+
+          }
+          &--check{
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        &__books{
+
+        }
+      }
+    }
+  }
+
+
+}@media (max-width: 320px){
+  #buy{
+    margin-left: 2px;
+
+    .buy{
+      &--card{
+        width: 283px;
+        &__input{
+          margin-left: 22px;
+          &--in{
+
+
+          }
+          &--check{
+            &__radio{
+              &--cvv{
+                input{
+                  width: 114px;
+                }
+              }
+            }
+
+          }
+          &--paketa{
+
+          }
+          &--viv{
+
+          }
+          &--choose{
+
+          }
+        }
+
+      }
+      &--book{
+        &__books{
+          left: 243px;
+          top: -2030px;
+          width: 23%;
+
+        }
+        &__books3{
+          left: -21px;
+          top: -1518px;
+          width: 11%;
+        }
+        &__books2{
+          left: 251px;
+          top: -354px;
+          width: 20%;        }
+        &__books5{
+          left: 245px;
+          width: 23%;
+          top: -941px;
+        }
+      }
+    }
+  }
+
+
+}

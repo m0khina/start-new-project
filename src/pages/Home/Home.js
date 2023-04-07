@@ -7,6 +7,7 @@ import Staty from './Staty/Staty';
 const Home = () => {
     return (
         <div>
+
            <Hero/>
             <Staty/>
             <Follow/>

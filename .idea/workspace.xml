@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef89dfc-ea8f-4f01-84d8-3d6711a4abf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/start-new-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OurCourses/Hero/Hero.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OurCourses/OurCourse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OurCourses/OurCourses.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Follow/Follow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Follow/Follow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Buy/Buy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Buy/Buy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2023_18_22__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Follow/Buy/Buy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="inputwe" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,6 +67,15 @@
       <workItem from="1680699569764" duration="16000" />
       <workItem from="1680699628467" duration="1976000" />
       <workItem from="1680701748419" duration="2366000" />
+      <workItem from="1680709080896" duration="312000" />
+      <workItem from="1680759577635" duration="6000" />
+      <workItem from="1680774175926" duration="633000" />
+      <workItem from="1680780866320" duration="240000" />
+      <workItem from="1680799780722" duration="25000" />
+      <workItem from="1680799884338" duration="330000" />
+      <workItem from="1680800324081" duration="1042000" />
+      <workItem from="1680801702397" duration="10000" />
+      <workItem from="1680842603316" duration="7028000" />
     </task>
     <servers />
   </component>
