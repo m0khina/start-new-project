@@ -1,14 +1,11 @@
 #buy{
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid #FFFFFF;
-  backdrop-filter: blur(2px);
   padding:200px 0;
   .buy{
     margin-left: 279px;
     &--card{
       width: 635px;
       height: 1332px;
-      background: rgba(255, 255, 255, 0.606);
+      background: rgba(255, 255, 255, 0.302);
       border: 1px solid #FFFFFF;
       backdrop-filter: blur(2px);
       border-radius: 10px;
@@ -67,7 +64,7 @@
             font-weight: 400;
             font-size: 10px;
             line-height: 17px;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.294);
 
           }
 
@@ -156,7 +153,7 @@
 
           width: 240px;
           height: 511px;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.097);
           border: 1px solid #FFFFFF;
           backdrop-filter: blur(3px);
           border-radius: 10px;
@@ -236,7 +233,6 @@
               border-radius: 10px;
               font-weight: 500;
               font-size: 20px;
-              color: #595FEB;
 
             }
 
@@ -268,10 +264,7 @@
           backdrop-filter: blur(3px);
           border-radius: 10px;
           transition: 1s;
-          &:hover{
-
-            transform: scale(1.03);
-          }
+        
 
           h1{
             font-family: 'Montserrat',sans-serif;
@@ -384,11 +377,7 @@
           backdrop-filter: blur(3px);
           border-radius: 10px;
           transition: 1s;
-          &:hover{
-
-            transform: scale(1.03);
-          }
-
+         
 
           h1{
             font-family: 'Montserrat',sans-serif;
