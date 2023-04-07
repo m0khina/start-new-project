@@ -1036,12 +1036,31 @@
 
     .buy{
       &--card{
+
+        height: 1835px;
         width: 283px;
         &__input{
           margin-left: 22px;
           &--in{
 
 
+          }
+          &--simple2{
+            height: 449px;
+          }
+          &--simple{
+            height: 393px;
+            &__allvays{
+              &--right2{
+                margin-top: -1px;
+
+              }
+            }
+            &__cost{
+              &--som3{
+                margin-top: 280px;
+              }
+            }
           }
           &--check{
             &__radio{
@@ -1060,6 +1079,18 @@
 
           }
           &--choose{
+            button{
+              width: 243px;
+              height: 41px;
+
+            }
+            &__agree{
+              align-items: flex-start;
+              p{
+                font-size: 16px;
+              }
+
+            }
 
           }
         }
