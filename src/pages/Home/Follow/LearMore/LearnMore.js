@@ -10,6 +10,8 @@ import { NavLink } from 'react-router-dom';
 const LearnMore = () => {
     const [active1, setActive1] = useState(false)
     const [active2, setActive2] = useState(true)
+    const [active3, setActive3] = useState(true)
+    const [active4, setActive4] = useState(true)
 
     const getActive1 = () => {
         setActive1(!active1)
@@ -29,18 +31,22 @@ const LearnMore = () => {
                     <h1 className="learnMore--titleh1">ВЫБЕРИТЕ СВОЙ ПАКЕТ УЧАСТИЯ</h1>
                     <p className="learnMore--titleP">Присоединяйтесь к нам и начните свой путь к успеху.</p>
                     <div className="learnMore--cards">
-                        <div className="learnMore--cards__card1"
-                            style={{
+                        <div className="learnMore--cards__card1" style={{
                                 transition: ".4s",
                                 transform: active1 ? "scale(1.1)" : "",
                             }} onClick={getActive1}>
                             <h1>Обычный</h1>
                             <div className="learnMore--cards__card1--inputMonth">
-                                <input type="radio" id="radioMonth" name='qestion' />
+                                <input onClick={()=> {
+                                    getActive1()
+                                      setActive3(true)
+                                }} type="radio" id="radioMonth" name='qestion' />
                                 <label htmlFor="radioMonth">Ежемесячно</label>
                             </div>
                             <div className="learnMore--cards__card1--inputYear">
-                                <input type="radio" id="radioYear" name='qestion' />
+                                <input onClick={()=> {
+                                    setActive3(false)
+                                }} type="radio" id="radioYear" name='qestion' />
                                 <label htmlFor="radioYear">Ежегодно</label>
                             </div>
                             <div className="learnMore--cards__card1--icons">
@@ -51,7 +57,11 @@ const LearnMore = () => {
                                 <h2><BsCheckLg /></h2>
                                 <p>Все мастер классы по саморозвитию</p>
                             </div>
-                            <h2 className="learnMore--cards__card1--prace">Цена: <b>225$</b></h2>
+                            <h2 className="learnMore--cards__card1--prace">Цена: <b style={{
+                                display: active3===false ? "none": "block"
+                            }}>225$</b> <span  style={{
+                                display: active3===true ? "none": "block"
+                            }}>65$</span> </h2>
                             <NavLink to={"/buy"}>
                             <button className="learnMore--cards__card1--btnFollow">Подписаться</button>
                             </NavLink>
@@ -65,11 +75,15 @@ const LearnMore = () => {
                             onClick={getActive2}>
                             <h1>Интенсив</h1>
                             <div className="learnMore--cards__card1--inputMonth">
-                                <input type="radio" id="radioMonth" name='qestion2' />
+                                <input onClick={()=> {
+                                    setActive4(true)
+                                }} type="radio" id="radioMonth" name='qestion2' />
                                 <label htmlFor="radioMonth">Ежемесячно</label>
                             </div>
                             <div className="learnMore--cards__card1--inputYear">
-                                <input type="radio" id="radioYear" name='qestion2' />
+                                <input onClick={()=> {
+                                    setActive4(false)
+                                }}  type="radio" id="radioYear" name='qestion2' />
                                 <label htmlFor="radioYear">Ежегодно</label>
                             </div>
                             <div className="learnMore--cards__card1--icons">
@@ -96,7 +110,11 @@ const LearnMore = () => {
                                 <h2><BsCheckLg /></h2>
                                 <p>Курс по одолеванию страха потери</p>
                             </div>
-                            <h2 className="learnMore--cards__card1--prace2">Цена: <b>750$</b></h2>
+                            <h2 className="learnMore--cards__card1--prace2">Цена: <b style={{
+                                display: active4 === true ? "none":"block"
+                            }}>62$</b> <span style={{
+                                display: active4 === true ? "block" : "none"
+                            }}>750$</span></h2>
                             <NavLink to={"/buy"}>
                             <button className="learnMore--cards__card1--btnFollow">Подписаться</button>
                             </NavLink>

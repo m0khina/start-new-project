@@ -74,13 +74,18 @@
 
         }
         &--prace{
+          display: flex;
           font-weight: 400;
           font-size: 30.3405px;
           line-height: 37px;
           color: #FFFFFF;
           margin: 250px 0 24px 10px ;
+          span{
+            //display: none;
+          }
         }
         &--prace2{
+          display: flex;
           font-weight: 400;
           font-size: 30.3405px;
           line-height: 37px;

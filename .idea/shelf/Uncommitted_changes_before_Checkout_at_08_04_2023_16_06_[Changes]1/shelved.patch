@@ -1,0 +1,15 @@
+Index: src/pages/OurCourses/Hero/Hero.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/OurCourses/Hero/Hero.scss b/src/pages/OurCourses/Hero/Hero.scss
+--- a/src/pages/OurCourses/Hero/Hero.scss	
++++ b/src/pages/OurCourses/Hero/Hero.scss	
+@@ -112,4 +112,4 @@
+ 
+     }
+   }
+-}
+\ No newline at end of file
++}
