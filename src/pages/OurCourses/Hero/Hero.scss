@@ -1,0 +1,115 @@
+#hero {
+  margin-left: 23px;
+  padding: 243px 0 50px 0;
+
+  .hero {
+    &--coffee {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 1300px;
+      height: 550px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #FFFFFF;
+      backdrop-filter: blur(7px);
+      border-radius: 10px;
+
+      &__cup {
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 49px;
+          color: #FFFFFF
+        }
+
+        p {
+          padding: 20px 0 0 0;
+          width: 496px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+        }
+
+        &--btn {
+            //background: red;
+         &__link{
+           &--left {
+               background: #FFFFFF;
+               width: 176px;
+               height: 44px;
+               border-radius: 10px;
+               transition: 1s;
+               margin: 00015px;
+               &:hover{
+                 transform: scale(1.10);
+               }
+
+
+
+
+
+
+
+
+
+
+           }
+
+         }
+         &__link2{
+           &__rigth{
+             width: 94px;
+             height: 44px;
+             border: 1px solid #FFFFFF;
+             backdrop-filter: blur(12px);
+             border-radius: 10px;
+             transition: 1s;
+             &:hover{
+               transform: scale(1.10);
+
+             }
+           }
+
+         }
+
+        }
+      }
+
+    }
+    &--book{
+      position: relative;
+
+      &__last{
+        position: absolute;
+        top: 313px;
+        left: -166px;
+        width: 432px;
+        height: 189px;
+
+
+      }
+      &__left{
+        position: absolute;
+        left: -1340px;
+        top: 281px;
+
+
+      }
+      &__bottom{
+        position: absolute;
+        top: -122px;
+        left: -1102px;
+
+
+      }
+      &__insaid{
+          position: absolute;
+        top: 1px;
+        left: 1px;
+      }
+
+    }
+  }
+}
