@@ -9,6 +9,7 @@ import LearnMore from "./pages/Home/Follow/LearMore/LearnMore";
 import Buy from "./pages/Home/Follow/Buy/Buy"
 import OurCourse from "./pages/OurCourses/OurCourse";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import TeamBuilding from "./pages/TeamBuilding/TeamBuilding";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/buy" element={<Buy/>}/>
                 <Route path="/our-course" element={<OurCourse/>}/>
                 <Route path="/about-us" element={<AboutUs/>}/>
+                <Route path="/team-building" element={<TeamBuilding/>}/>
             </Routes>
             <Footer/>
         </div>

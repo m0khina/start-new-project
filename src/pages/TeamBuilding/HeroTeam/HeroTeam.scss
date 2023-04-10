@@ -1,0 +1,80 @@
+#heroTeam{
+  padding: 245px 0 120px 0;
+  .hero{
+    position: relative;
+    &--bgBook{
+      position: absolute;
+      left: 1100px;
+      top: -120px;
+      filter: blur(2px);
+      transform: rotate(28deg);
+      width: 47px;
+    }
+    &--pTitle{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+    &--titles{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 73%;
+      &__book1{
+        position: absolute;
+        filter: blur(2px);
+        transform: rotate(-40deg);
+        left: 230px;
+        width: 80px;
+        bottom: 140px;
+
+      }
+      &__greatTeam{
+        h1{
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 49px;
+          color: #FFFFFF;
+          margin: 20px 0;
+        }
+        p{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+          width: 600px;
+        }
+      }
+      &__insayt{
+       h3{
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 29px;
+         border-bottom: 1px solid white;
+         color: #FFFFFF;
+       }
+        p{
+          margin: 10px 0;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+      }
+    }
+    &--btn{
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #595FEB;
+      background: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 24px;
+      margin: 30px 0 ;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+
+#aboutUs{
+  padding: 210px 0 90px;
+  text-align: center;
+  .aboutUs{
+    position: relative;
+    &--bookBg1{
+      position: absolute;
+      left: 1110px;
+      top: -95px;
+      filter: blur(2px);
+      transform: rotate(28deg);
+      width: 47px;
+    }
+    &--book2{
+      position: absolute;
+      filter: blur(2px);
+      transform: rotate(-45deg);
+      left: 200px;
+      width: 75px;
+      top: 45px;
+    }
+    &--bgBook{
+      position: absolute;
+      filter: blur(1px);
+      width: 140px;
+      bottom: -85px;
+      left: -130px;
+      transform: rotate(-5deg);
+    }
+
+    h2{
+      font-weight: 500;
+      font-size: 47.4833px;
+      line-height: 58px;
+      color: #FFFFFF;
+    }
+    h4{
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;
+      margin: 60px 0 45px 0;
+    }
+    p{
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+    }
+  }
+}
