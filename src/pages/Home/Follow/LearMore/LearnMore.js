@@ -7,6 +7,7 @@ import BookBg from "./../../../../assets/img/logo.svg"
 import Accardeon from "./../../Accardeon/Accardeon"
 import { NavLink } from 'react-router-dom';
 
+
 const LearnMore = () => {
     const [active1, setActive1] = useState(false)
     const [active2, setActive2] = useState(true)
