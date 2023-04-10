@@ -36,9 +36,10 @@
             //background: red;
          &__link{
            &--left {
-               background: #FFFFFF;
+               background: whitesmoke;
                width: 176px;
                height: 44px;
+                color: blue;
                border-radius: 10px;
                transition: 1s;
                margin: 00015px;
@@ -59,17 +60,20 @@
 
          }
          &__link2{
-           &__rigth{
-             width: 94px;
-             height: 44px;
-             border: 1px solid #FFFFFF;
-             backdrop-filter: blur(12px);
-             border-radius: 10px;
-             transition: 1s;
-             &:hover{
-               transform: scale(1.10);
+           &--right{
+
+               width: 94px;
+               height: 44px;
+             color: whitesmoke;
+               border: 1px solid #FFFFFF;
+               //backdrop-filter: blur(12px);
+               border-radius: 10px;
+               &:hover{
+                 transform: scale(1.10);
+
 
              }
+
            }
 
          }
@@ -85,8 +89,8 @@
         position: absolute;
         top: 313px;
         left: -166px;
-        width: 432px;
-        height: 189px;
+        width: 660px;
+        height: 185px;
 
 
       }
