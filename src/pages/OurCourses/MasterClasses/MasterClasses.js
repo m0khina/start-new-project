@@ -2,6 +2,7 @@ import React from 'react';
 import "./MasterClasses.scss"
 import MK from "./../../../assets/img/master-klass-img.png"
 import Book from "./../../../assets/img/logo.svg"
+import { NavLink } from 'react-router-dom';
 
 const MasterClasses = () => {
     return (
@@ -11,6 +12,7 @@ const MasterClasses = () => {
                     <img src={Book} alt="" className="mk--book"/>
                     <h2 className="mk--title">Мастер классы</h2>
                     <div className="mk--cards">
+                        <NavLink to={"/team-building"} >
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -24,6 +26,8 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
+                        <NavLink to={"/team-building"}>
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -37,6 +41,8 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
+                        <NavLink to={"/team-building"}>
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -50,6 +56,8 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
+                        <NavLink to={"/team-building"}>
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -63,6 +71,8 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
+                        <NavLink to={"/team-building"}>
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -76,6 +86,8 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
+                        <NavLink to={"team-building"}>
                         <div className="mk--card">
                             <h3>Создание команды</h3>
                             <div className="mk--card__info">
@@ -89,6 +101,7 @@ const MasterClasses = () => {
                             <img src={MK} alt="" className="mk--card__imgMk"/>
                             <a href="">Подробнее...</a>
                         </div>
+                        </NavLink>
                     </div>
                     <center>
                         <button className="mk--btnMain">Смотреть все мастер классы</button>
