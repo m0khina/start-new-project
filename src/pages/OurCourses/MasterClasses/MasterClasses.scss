@@ -1,0 +1,86 @@
+
+#mk{
+  padding: 100px 0;
+  .mk{
+    position: relative;
+    &--cards{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &--title{
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;
+      margin: 20px 0 20px 100px;
+    }
+    &--book{
+      position: absolute;
+      filter: blur(1.1px);
+      left: 1185px;
+      width:140px;
+    }
+    &--card{
+      margin: 12px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #FFFFFF;
+      backdrop-filter: blur(7.5px);
+      border-radius: 10px;
+      width: 372px;
+      h3{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+      &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0 12px 0;
+        h4{
+          font-weight: 500;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+        &--btn{
+          display: flex;
+          gap: 10px;
+          button{
+            font-weight: 300;
+            font-size: 16px;
+            color: #FFFFFF;
+            padding: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid #FFFFFF;
+            border-radius: 5px;
+          }
+        }
+      }
+      &__imgMk{
+        margin: 10px 0 15px 0;
+      }
+      a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+
+    }
+    &--btnMain{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      padding: 13px 15px;
+      margin: 40px 0;
+    }
+  }
+}

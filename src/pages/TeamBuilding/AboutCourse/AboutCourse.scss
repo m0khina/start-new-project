@@ -1,0 +1,37 @@
+
+#aboutCourse{
+  .about{
+    position: relative;
+    &--book1{
+      position: absolute;
+      filter: blur(2px);
+      left: 315px;
+      bottom: 300px;
+      width: 150px;
+      transform: rotate(30deg);
+    }
+    &--book2{
+      position: absolute;
+      filter: blur(1px);
+     left: 1165px;
+      bottom: 30px;
+      width: 170px;
+
+
+    }
+    h1{
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      margin: 30px 0;
+    }
+    p{
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 29px;
+      margin: 22px 0;
+      color: #FFFFFF;
+    }
+  }
+}
