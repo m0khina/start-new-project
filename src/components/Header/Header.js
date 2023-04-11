@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./../../assets/img/logo.svg";
 import { CiUser } from "react-icons/ci";
@@ -16,6 +16,8 @@ const Header = () => {
     dispatch({ type: "OPEN_LOGIN", payload: log });
     localStorage.setItem("login", JSON.stringify(true));
   };
+
+
 
   return (
     <div

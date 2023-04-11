@@ -1,45 +1,20 @@
 import React from "react";
 import "./Reviews.scss";
 import Slider from "react-slick";
-import SliderIcon1 from "./../../../assets/img/slider-icon.png";
-import SliderIcon2 from "./../../../assets/img/slider-icon2.png";
+import {HiOutlineArrowRight} from "react-icons/hi";
+import {HiOutlineArrowLeft} from "react-icons/hi";
+import SliderIcon1 from "./../../../assets/img/slider-icon.svg";
+import SliderIcon2 from "./../../../assets/img/slider-icon2.svg";
 
 const Reviews = () => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    nextArrow: <img src={SliderIcon2} />,
-    prevArrow: <img src={SliderIcon1} />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    slidesToShow: 1.57,
+    slidesToScroll: 1,
+    nextArrow: <img src={SliderIcon2} alt="arrow" />,
+    prevArrow:  <img src={SliderIcon1} alt="arrow" />,
   };
 
   return (

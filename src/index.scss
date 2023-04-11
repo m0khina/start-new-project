@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background: linear-gradient(140deg, #D78B59 6.77%, #595FEB, #595FEB 47.79%);
+  // background: linear-gradient(140deg, #D78B59 6.77%, #595FEB, #595FEB 47.79%);
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   max-width: 100%;
@@ -51,4 +51,12 @@ a:hover {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+.App--bg{
+  background: linear-gradient(152.23deg, #D78B59 6.77%, #595FEB 47.79%);
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
 }

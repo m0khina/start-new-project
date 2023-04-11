@@ -4,7 +4,7 @@
   margin-left: -152px;
   position: relative;
 
- 
+
   &--title {
     margin: 20px 0 20px 100px;
     font-weight: 500;
@@ -14,15 +14,15 @@
   }
 
   .slick-slide {
-    width: 930px !important;
+    width: 900px !important;
   }
 
-  .slick-track{
-    width: 16000px !important;
+  .slick-track {
+    width: 13000px !important;
   }
 
   .slick-slider {
-    width: 113% !important;
+    width: 112.5% !important;
   }
 
   .slick-next {
@@ -34,19 +34,65 @@
     z-index: 2;
   }
 
-  .slick-next{
+  .slick-next {
     z-index: 5;
   }
 
   .slick-arrow {
-    width: 50px;
+    width: 60px;
     height: auto;
+    padding: 17px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(1.5px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-current {
+    div {
+      .review--cards {
+        &__card1 {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.136)), linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 27.1%) !important;
+          border: 1px solid #bebebe !important;
+
+          p {
+            color: rgb(180, 177, 177) !important;
+          }
+
+          h2 {
+            color: rgb(180, 177, 177) !important;
+          }
+        }
+      }
+    }
+  }
+
+
+  .slick-active {
+    div {
+      .review--cards {
+        &__card1 {
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid #ffffff;
+
+          p {
+            color: white
+          }
+          h2{
+            color: #ffffff;
+          }
+        }
+      }
+    }
   }
 
   &--cards {
     &__card1 {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #FFFFFF;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 27.1%);
+      border: 1px solid #bebebe;
       backdrop-filter: blur(12px);
       border-radius: 10px;
       width: 850px;
@@ -56,7 +102,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: #7d7d7d;
         margin: 0 0 40px 0;
       }
 
@@ -74,7 +120,7 @@
           font-weight: 500;
           font-size: 24px;
           line-height: 29px;
-          color: #FFFFFF;
+          color: #848484;
         }
       }
     }
