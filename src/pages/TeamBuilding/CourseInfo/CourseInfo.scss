@@ -1,9 +1,26 @@
+
 #courseInfo {
   margin: 120px 0;
-  .info {
-    position: relative;
+  position: relative;
+  .book1{
+    position: absolute;
+    filter: blur(2px);
+    left: 270px;
+    top: 650px;
+    width: 54px;
+    transform: rotate(30deg);
+  }
+  .book2{
+    position: absolute;
+    filter: blur(2px);
+    left: 1100px;
+    width: 80px;
+    transform: rotate(-40deg);
+    bottom: -50px;
 
-    &--titles {
+  }
+  .info {
+    &--titles{
       display: flex;
       gap: 20px;
       margin: 35px 0;
