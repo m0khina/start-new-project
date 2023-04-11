@@ -5,6 +5,7 @@ import CourseInfo from "./CourseInfo/CourseInfo";
 import FollowCourse from "./FollowCourse/FollowCourse";
 import ShowCourse from "./ShowCourse/ShowCourse";
 import CourseProgramme from './CourseProgramme/CourseProgramme';
+import Reviews from './Reviews/Reviews';
 
 const TeamBuilding = () => {
     return (
@@ -15,6 +16,7 @@ const TeamBuilding = () => {
             <ShowCourse/>
             <FollowCourse/>
             <CourseProgramme/>
+            <Reviews/>
         </div>
     );
 };

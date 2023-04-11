@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import CourseBlock from "./CourseBlock/CourseBlock";
