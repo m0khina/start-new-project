@@ -13,6 +13,8 @@ const Buy = () => {
     const [check3, setCheck3] = useState(false)
     const [line, setLine] = useState(true)
     const [line3, setLine3] = useState(true)
+
+    
     return (
         <div id="buy">
             <div className="container">

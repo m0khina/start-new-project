@@ -26,7 +26,7 @@ const Hero = () => {
 
                                 </Link>
                                 <Link className="hero--coffee__cup--btn__link2">
-                                    <button className="hero--coffee_cup--btn_right">Войти</button>
+                                    <button className="hero--coffee__cup--btn__link2--right">Войти</button>
 
                                 </Link>
                             </div>

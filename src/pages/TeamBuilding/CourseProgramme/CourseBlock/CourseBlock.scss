@@ -1,0 +1,25 @@
+    .courseBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 100px 0;
+
+        &--block {
+            width: 30%;
+            img{
+                padding-bottom: 10px;
+            }
+            h2 {
+                font-weight: 600;
+                font-size: 24px;
+                color: #FFFFFF;
+                padding: 10px 0;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }

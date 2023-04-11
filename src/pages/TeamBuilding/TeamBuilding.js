@@ -4,6 +4,7 @@ import HeroTeam from "./HeroTeam/HeroTeam";
 import CourseInfo from "./CourseInfo/CourseInfo";
 import FollowCourse from "./FollowCourse/FollowCourse";
 import ShowCourse from "./ShowCourse/ShowCourse";
+import CourseProgramme from './CourseProgramme/CourseProgramme';
 
 const TeamBuilding = () => {
     return (
@@ -13,6 +14,7 @@ const TeamBuilding = () => {
             <CourseInfo/>
             <ShowCourse/>
             <FollowCourse/>
+            <CourseProgramme/>
         </div>
     );
 };
