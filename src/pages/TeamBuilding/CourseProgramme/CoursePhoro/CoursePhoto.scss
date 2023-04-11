@@ -1,0 +1,54 @@
+.coursePhoto {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &--img {
+        width: 473px;
+        height: 324px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-weight: 500;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    &--title {
+        span {
+            font-weight: 500;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 24px;
+            color: #FFFFFF;
+            padding: 10px 0 20px 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            padding: 5px 0 5px 60px;
+
+            color: #FFFFFF;
+        }
+    }
+
+}

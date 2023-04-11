@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import CourseBlock from "./CourseBlock/CourseBlock";
+import YouWillLearn from "./YouWillLearn/YouWillLearn";
+import CoursePhoto from "./CoursePhoro/CoursePhoto";
 
 const CourseProgramme = () => {
   const [acc, setAcc] = useState(false);
@@ -240,8 +243,10 @@ const CourseProgramme = () => {
               </div>
             </div>
           </div>
-
-          
+        
+        <CourseBlock/>
+        <YouWillLearn/>
+        <CoursePhoto/>
         </div>
       </div>
     </div>
