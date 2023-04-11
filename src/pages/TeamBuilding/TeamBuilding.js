@@ -2,8 +2,8 @@ import React from 'react';
 import AboutCourse from "./AboutCourse/AboutCourse";
 import HeroTeam from "./HeroTeam/HeroTeam";
 import CourseInfo from "./CourseInfo/CourseInfo";
-import CourseProgramme from "./CourseProgramme/CourseProgramme";
 import FollowCourse from "./FollowCourse/FollowCourse";
+import ShowCourse from "./ShowCourse/ShowCourse";
 
 const TeamBuilding = () => {
     return (
@@ -11,7 +11,7 @@ const TeamBuilding = () => {
             <HeroTeam/>
             <AboutCourse/>
             <CourseInfo/>
-            <CourseProgramme/>
+            <ShowCourse/>
             <FollowCourse/>
         </div>
     );
