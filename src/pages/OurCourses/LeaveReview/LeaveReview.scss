@@ -1,8 +1,7 @@
 #leaveReview {
     position: relative;
-
     .leaveReview {
-        padding: 140px 0;
+        padding: 10px 0 260px 0;
         display: flex;
         justify-content: space-evenly;
         align-items: start;
@@ -20,8 +19,8 @@
             filter: blur(1px);
             width: 164px;
             transform: rotate(25deg);
-            left: 480px;
-            bottom: 60px;
+            left: 420px;
+            bottom: 190px;
         }
 
         &--title {
