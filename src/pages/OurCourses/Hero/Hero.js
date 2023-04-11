@@ -6,9 +6,9 @@ import Book from "./../../../assets/img/logo.svg"
 
 const Hero = () => {
     return (
-        <div id="hero">
+        <div id="heroOur">
             <div className="container">
-                <div className="hero">
+                <div className="heroOur">
                     <img src={Book} alt="" className="hero--book1"/>
                     <img src={Book} alt="" className="hero--book2"/>
                     <img src={Book} alt="" className="hero--book3"/>
