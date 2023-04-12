@@ -118,6 +118,17 @@
   }
 }
 
-@media(max-width: 1440px){
-
+@media(max-width: 1200px){
+    #follow{
+      .follow{
+        &--title{
+          h1{
+            font-size: 34px;
+          }
+          p{
+            font-size: 26px;
+          }
+        }
+      }
+    }
 }
