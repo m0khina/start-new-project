@@ -6,6 +6,8 @@
             display: none;
         }
 
+    
+
         margin-bottom: 200px;
         position: relative;
         display: flex;
@@ -69,7 +71,7 @@
 
 
             &__centerBooks {
-                width: 31%;
+                width: 100%;
 
                 &--aboutBook {
                     margin-top: 30px;
@@ -318,6 +320,9 @@
 @media (max-width:1200px) {
     #books {
         .books {
+            .firstBlockTrue{
+                width: 33%;
+            }
             &--tabs {
                 width: 64%;
             }

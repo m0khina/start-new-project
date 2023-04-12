@@ -89,6 +89,11 @@ const Books = () => {
             {book2.map((el) => (
               <div className="allBooks--nav__numbers">{el}</div>
             ))}
+            {
+              book.map(el => (
+                <div className="allBooks--nav__numbers2">{el}</div>
+              ))
+            }
             <div className="allBooks--nav__next">
               <IoIosArrowForward />
             </div>
