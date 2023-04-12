@@ -1,8 +1,6 @@
 import React from "react";
 import "./Reviews.scss";
 import Slider from "react-slick";
-import {HiOutlineArrowRight} from "react-icons/hi";
-import {HiOutlineArrowLeft} from "react-icons/hi";
 import SliderIcon1 from "./../../../assets/img/slider-icon.svg";
 import SliderIcon2 from "./../../../assets/img/slider-icon2.svg";
 

@@ -1,6 +1,11 @@
 #books {
     .books {
 
+
+        .secondBlockFalse {
+            display: none;
+        }
+
         margin-bottom: 200px;
         position: relative;
         display: flex;
@@ -61,6 +66,7 @@
             display: flex;
             justify-content: space-between;
             align-items: start;
+
 
             &__centerBooks {
                 width: 31%;
@@ -235,6 +241,7 @@
                 }
             }
         }
+
         &--block {
             display: flex;
             justify-content: space-between;
@@ -301,6 +308,269 @@
                         border: 0.5px solid #FFFFFF;
                         border-radius: 5px;
                         padding: 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 64%;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 64%;
+
+                &__btn {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 80%;
+
+                &__btn {
+                    font-size: 15px;
+                }
+            }
+
+            .firstBlockTrue {
+                display: none;
+            }
+
+            &--startBlock {
+                flex-direction: column;
+
+                &__firstBlock {
+                    width: 100%;
+
+                    &--aboutBook {
+                        width: 100%;
+                        margin: 20px 0;
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                &__centerBooks {
+                    width: 100%;
+
+                    &--aboutBook {
+                        width: 100%;
+                        margin: 20px 0;
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .secondBlockFalse {
+                display: block;
+            }
+
+            &--block {
+                flex-direction: column;
+
+                &__aboutBook {
+                    width: 100%;
+                    margin: 20px 0;
+
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 88%;
+
+                &__btn {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                &__btn {
+                    font-size: 15px;
+                    margin: 10px 6px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:450px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                &__btn {
+                    font-size: 15px;
+                    margin: 10px 6px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:375px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                &__btn {
+                    font-size: 15px;
+                    margin: 10px 6px;
+                }
+            }
+
+            &--block {
+                &__aboutBook {
+                    &--start {
+                        h4 {
+                            font-size: 14px;
+                        }
+
+                        button {
+                            font-size: 13px;
+                        }
+                    }
+
+                    &--end {
+                        h3 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:320px) {
+    #books {
+        .books {
+            &--tabs {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                &__btn {
+                    font-size: 15px;
+                    margin: 10px 6px;
+                }
+            }
+
+            &--startBlock {
+                &__firstBlock {
+                    &--aboutBook {
+                        &__start {
+                            h4 {
+                                font-size: 12px;
+                            }
+
+                            button {
+                                font-size: 10px;
+                            }
+                        }
+
+                        &__end {
+                            h3 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                &__centerBooks{
+                    &--aboutBook {
+                        &__start {
+                            h4 {
+                                font-size: 12px;
+                            }
+
+                            button {
+                                font-size: 10px;
+                            }
+                        }
+
+                        &__end {
+                            h3 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+           
+
+            &--block {
+                &__aboutBook {
+                    &--start {
+                        h4 {
+                            font-size: 12px;
+                        }
+
+                        button {
+                            font-size: 10px;
+                        }
+                    }
+
+                    &--end {
+                        h3 {
+                            font-size: 12px;
+                        }
                     }
                 }
             }

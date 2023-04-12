@@ -62,8 +62,14 @@
         align-items: center;
         justify-content: space-between;
 
+
+
         &--bookR {
-          margin-left: -70px;
+          margin-left: -94px;
+        }
+
+       .wrapper--accardion--bookT{
+          width: 28%;
         }
 
         &__title {
@@ -132,6 +138,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .item--title h4{
+          font-size: 24px;
+        }
 
         &--bookR {
           margin-left: -70px;
@@ -214,6 +224,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .item--title h4{
+          font-size: 24px;
+        }
 
         &--bookR {
           margin-left: -70px;
