@@ -14,13 +14,14 @@ import TeamBuilding from "./pages/TeamBuilding/TeamBuilding";
 
 function App() {
 
+
+
     const modal = useSelector(state => state.login)
 
     return (
         <div className="App">
-            <Header style={{
-                display: modal ? "none" : "block"
-            }}/>
+            <div className="App--bg"/>
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<Index/>}/>
