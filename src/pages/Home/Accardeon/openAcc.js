@@ -84,12 +84,8 @@ const OpenAcc = () => {
                 setSelected4(!selected3)
                 setSelected(false)
                 setSelected2(false)
-                setSelected3 (false)
-            }}
-                style={{
-                    height: selected4 ? "200px" : "",
-                    transition: ".6s"
-                }} className="item">
+                setSelected3 (false)}}
+                style={{height: selected4 ? "200px" : "", transition: ".6s"}} className="item">
                 <div className="item--title">
 
                     <div>
@@ -97,9 +93,7 @@ const OpenAcc = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi eius enim
                             fuga, id laboriosam laudantium magni quidem sed voluptates?</p>
                     </div>
-                    <MdArrowBackIosNew style={{
-                        transform: selected4 ? "rotate(90deg)" : ""
-                    }} className="item--icon" />
+                    <MdArrowBackIosNew style={{transform: selected4 ? "rotate(90deg)" : ""}} className="item--icon" />
                 </div>
             </div>
         

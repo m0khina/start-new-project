@@ -24,8 +24,7 @@ const Header = () => {
       style={{
         display: !modal ? "block" : "none",
       }}
-      id="header"
-    >
+      id="header">
       <div className="container">
         <div className="header--child">
           <div className="header">
