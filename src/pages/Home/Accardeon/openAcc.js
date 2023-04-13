@@ -81,7 +81,7 @@ const OpenAcc = () => {
                  <div className="item--div"></div>
 
             <div onClick={() => {
-                setSelected4(!selected3)
+                setSelected4(!selected4)
                 setSelected(false)
                 setSelected2(false)
                 setSelected3 (false)}}

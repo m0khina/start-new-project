@@ -1,7 +1,16 @@
 #wrapper {
+  position: relative;
+
+
   .wrapper {
     padding: 160px 0;
     position: relative;
+
+    &--bookR {
+      position: absolute;
+      left: 0;
+      top: 40%;
+    }
 
     &--img1 {
       position: absolute;
@@ -11,7 +20,14 @@
       bottom: -12px;
       left: 310px;
       z-index: -9;
-  }
+    }
+
+    &--title {
+      img {
+        display: none;
+      }
+    }
+
     h1 {
       font-weight: 600;
       font-size: 40px;
@@ -28,7 +44,11 @@
         margin-left: -7%;
       }
 
-      
+      &--bookT {
+        margin-left: 5%;
+      }
+
+
 
       &__title {
         &--bookL {
@@ -38,27 +58,25 @@
         }
       }
 
-     
+
     }
   }
 }
 
-@media (max-width: 1440px) {
-
-}
+@media (max-width: 1440px) {}
 
 @media (max-width: 1200px) {
   #wrapper {
     .wrapper {
       h1 {
         font-weight: 600;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 49px;
         color: #FFFFFF;
       }
 
       &--accordion {
-        display:  flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
 
@@ -68,7 +86,7 @@
           margin-left: -94px;
         }
 
-       .wrapper--accardion--bookT{
+        &--bookT {
           width: 28%;
         }
 
@@ -84,25 +102,25 @@
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 90px;
+          height: 77px;
           width: 650px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 25px;
+            font-size: 54px;
           }
 
           &--title {
             cursor: pointer;
-    
+
 
             h4 {
-              padding-bottom: 10px;
+              padding-bottom: 35px;
               text-align: left;
               font-weight: 400;
-              font-size: 30px;
+              font-size: 25px;
               line-height: 39px;
               color: #FFFFFF;
             }
@@ -129,7 +147,7 @@
     .wrapper {
       h1 {
         font-weight: 600;
-        font-size: 35px;
+        font-size: 28px;
         line-height: 49px;
         color: #FFFFFF;
       }
@@ -139,12 +157,16 @@
         align-items: center;
         justify-content: space-between;
 
-        .item--title h4{
+        .item--title h4 {
           font-size: 24px;
         }
 
         &--bookR {
           margin-left: -70px;
+        }
+
+        &--bookT {
+          width: 26%;
         }
 
         &__img {
@@ -154,6 +176,7 @@
         }
 
         &__title {
+
           &--bookL {
             z-index: -99;
             margin-right: 100px;
@@ -163,24 +186,22 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
           height: 90px;
-          width: 540px;
+          width: 570px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 25px;
+            font-size: 56px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
@@ -188,7 +209,7 @@
               padding-bottom: 10px;
               text-align: left;
               font-weight: 400;
-              font-size: 26px;
+              font-size: 25px;
               line-height: 39px;
               color: #FFFFFF;
             }
@@ -215,7 +236,7 @@
     .wrapper {
       h1 {
         font-weight: 600;
-        font-size: 35px;
+        font-size: 24px;
         line-height: 49px;
         color: #FFFFFF;
       }
@@ -225,7 +246,7 @@
         align-items: center;
         justify-content: space-between;
 
-        .item--title h4{
+        .item--title h4 {
           font-size: 24px;
         }
 
@@ -249,24 +270,22 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 90px;
-          width: 540px;
+          height: 66px;
+          width: 490px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 25px;
+            font-size: 40px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
@@ -274,8 +293,8 @@
               padding-bottom: 10px;
               text-align: left;
               font-weight: 400;
-              font-size: 26px;
-              line-height: 39px;
+              font-size: 22px;
+              line-height: 30px;
               color: #FFFFFF;
             }
 
@@ -296,7 +315,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #wrapper {
     .wrapper {
       h1 {
@@ -306,14 +325,32 @@
         color: #FFFFFF;
       }
 
+      &--title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        img{
+          display: block;
+          width: 20%;
+        }
+      }
+
       &--accordion {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        flex-direction: column;
+
         &--bookR {
           margin-left: -70px;
           width: 80px;
+        }
+
+
+        &--bookT{
+          display:none;
         }
 
         &__img {
@@ -332,33 +369,31 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 80px;
-          width: 470px;
+          height: 55px;
+          width: 100%;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 20px;
+            font-size: 40px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
             h4 {
-              padding-bottom: 10px;
+              padding-bottom: 40px;
               text-align: left;
               font-weight: 400;
-              font-size: 20px;
-              line-height: 39px;
+              font-size: 22px;
+              line-height: 26px;
               color: #FFFFFF;
             }
 
@@ -379,7 +414,7 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 576px) {
   #wrapper {
     .wrapper {
       h1 {
@@ -417,24 +452,20 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 80px;
-          width: 400px;
+          height: 64px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 20px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
@@ -442,8 +473,8 @@
               padding-bottom: 10px;
               text-align: left;
               font-weight: 400;
-              font-size: 20px;
-              line-height: 39px;
+              font-size: 22px;
+              line-height: 28px;
               color: #FFFFFF;
             }
 
@@ -464,7 +495,7 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   #wrapper {
     .wrapper {
       h1 {
@@ -502,33 +533,29 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 80px;
-          width: 400px;
+          height: 86px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 20px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
             h4 {
-              padding-bottom: 10px;
+              padding-bottom: 28px;
               text-align: left;
               font-weight: 400;
-              font-size: 20px;
-              line-height: 39px;
+              font-size: 22px;
+              line-height: 28px;
               color: #FFFFFF;
             }
 
@@ -587,33 +614,26 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 80px;
-          width: 360px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 20px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
             h4 {
-              padding-bottom: 10px;
               text-align: left;
               font-weight: 400;
               font-size: 20px;
-              line-height: 39px;
               color: #FFFFFF;
             }
 
@@ -672,38 +692,31 @@
         .item {
           background: transparent;
           margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
-          height: 80px;
-          width: 340px;
           overflow: hidden;
 
           &--icon {
             transform: rotate(-90deg);
             color: #FFFFFF;
-            font-size: 20px;
           }
 
           &--title {
             cursor: pointer;
             display: flex;
-            flex-direction: column;
             align-items: start;
             justify-content: start;
 
             h4 {
-              padding-bottom: 10px;
               text-align: left;
               font-weight: 400;
               font-size: 20px;
-              line-height: 39px;
               color: #FFFFFF;
             }
 
             p {
-              font-size: 16px;
+              font-size: 14px;
               color: white;
             }
 
@@ -753,7 +766,7 @@
           }
         }
 
-      
+
       }
     }
   }

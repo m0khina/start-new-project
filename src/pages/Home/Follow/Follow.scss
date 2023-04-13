@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@600;700;800&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
-#follow{
-  .follow{
+#follow {
+  .follow {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,27 +13,30 @@
     margin: 50px 0;
     padding: 30px 10px;
     overflow: hidden;
-    &:hover{
-     .follow--book__book1{
-       transition: .4s;
-       transform: rotate(32deg);
-       width: 240px;
-       height: auto;
-       margin-left: 790px;
-       filter: blur(3px);
-     }
-      .follow--book__book2{
+
+    &:hover {
+      .follow--book__book1 {
+        transition: .4s;
+        transform: rotate(32deg);
+        width: 240px;
+        height: auto;
+        margin-left: 790px;
+        filter: blur(3px);
+      }
+
+      .follow--book__book2 {
         transition: .4s;
         transform: rotate(18deg);
         width: 160px;
         height: auto;
         filter: blur(3px);
         margin-top: -190px;
-        margin-left: -80px ;
+        margin-left: -80px;
       }
     }
-    &--book{
-      &__book1{
+
+    &--book {
+      &__book1 {
         position: absolute;
         margin-left: 830px;
         margin-top: 10px;
@@ -42,10 +45,11 @@
         filter: blur(4px);
         transform: rotate(25deg);
       }
-      &__book2{
+
+      &__book2 {
         position: absolute;
         margin-top: -130px;
-        margin-left:-50px;
+        margin-left: -50px;
         width: 100px;
         height: auto;
         filter: blur(4px);
@@ -58,24 +62,25 @@
 
 
     }
-    &--title{
-      h1{
+
+    &--title {
+      h1 {
         margin: 17px 40px;
         font-weight: 600;
         font-size: 40px;
-        line-height: 49px;
         color: #FFFFFF;
       }
-      p{
+
+      p {
         margin: 15px 40px;
         font-weight: 400;
         font-size: 32px;
-        line-height: 39px;
         color: #FFFFFF;
       }
     }
-    &--buttons{
-      &__followBtn{
+
+    &--buttons {
+      &__followBtn {
         margin: 10px 0;
         padding: 12px 30px;
         gap: 10px;
@@ -85,16 +90,17 @@
         border-radius: 10px;
         font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
         transition: 1s;
-        &:hover{
-          background:#FFFFFF;
+
+        &:hover {
+          background: #FFFFFF;
           color: #595FEB;
           border: none;
           transform: scale(1.05);
         }
       }
-      &__learnBtn{
+
+      &__learnBtn {
         margin: 15px 0;
         padding: 12px 22px;
         gap: 10px;
@@ -103,11 +109,11 @@
         border-radius: 10px;
         font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
         color: #FFFFFF;
         transition: 1s;
-        &:hover{
-          background:#FFFFFF;
+
+        &:hover {
+          background: #FFFFFF;
           color: #595FEB;
           border: none;
           transform: scale(1.05);
@@ -118,17 +124,241 @@
   }
 }
 
-@media(max-width: 1200px){
-    #follow{
-      .follow{
-        &--title{
-          h1{
-            font-size: 34px;
-          }
-          p{
-            font-size: 26px;
-          }
+@media(max-width: 1200px) {
+  #follow {
+    .follow {
+      &--title {
+        h1 {
+          font-size: 34px;
+        }
+
+        p {
+          font-size: 26px;
         }
       }
     }
+  }
+}
+
+@media(max-width: 1024px) {
+  #follow {
+    .follow {
+      &--title {
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      &--buttons {
+        &__followBtn {
+          font-size: 18px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 992px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      &--title {
+        h1 {
+          font-size: 23px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      &--buttons {
+        &__followBtn {
+          font-size: 18px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 768px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      flex-direction: column;
+      &--title {
+        h1 {
+          font-size: 23px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      &--buttons {
+        &__followBtn {
+          font-size: 18px;
+          margin: 10px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 768px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      flex-direction: column;
+      &--title {
+        h1 {
+          font-size: 23px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+      }
+
+      &--buttons {
+        &__followBtn {
+          font-size: 18px;
+          margin: 10px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 450px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      flex-direction: column;
+      &--title {
+        h1 {
+          font-size: 23px;
+          margin: 15px 20px;
+        }
+
+        p {
+          font-size: 17px;
+          margin: 15px 20px;
+        }
+      }
+
+      &--buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__followBtn {
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 110px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 102px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 375px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      flex-direction: column;
+      &--title {
+        h1 {
+          font-size: 23px;
+          margin: 15px 20px;
+        }
+
+        p {
+          font-size: 17px;
+          margin: 15px 20px;
+        }
+      }
+
+      &--buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__followBtn {
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 76px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 68px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 320px) {
+  #follow {
+    .follow {
+      padding: 20px 10px;
+      flex-direction: column;
+      &--title {
+        h1 {
+          font-size: 23px;
+          margin: 10px 5px;
+        }
+
+        p {
+          font-size: 17px;
+          margin: 10px 5px;
+        }
+      }
+
+      &--buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__followBtn {
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 66px;
+        }
+        &__learnBtn{
+          font-size: 18px;
+          margin: 10px;
+          padding: 12px 56px;
+        }
+      }
+    }
+  }
 }
