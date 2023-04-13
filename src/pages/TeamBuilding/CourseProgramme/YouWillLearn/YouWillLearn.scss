@@ -17,3 +17,86 @@
         }
     }
 }
+@media (max-width: 1440px) {
+    .youWillLearn {
+    }
+}
+@media (max-width: 1200px) {
+    .youWillLearn {
+    }
+}
+@media (max-width: 1024px) {
+    .youWillLearn {
+    }
+}
+@media (max-width: 992px) {
+    .youWillLearn {
+    }
+}
+@media (max-width: 800px) {
+    .youWillLearn {
+    }
+}
+@media (max-width: 470px) {
+    .youWillLearn {
+        padding: 100px 0;
+        h1 {
+            font-weight: 600;
+            font-size: 32px;
+            color: #FFFFFF;
+        }
+
+        td {
+            padding:60px 0 40px 30px;
+
+            li {
+                font-weight: 400;
+                font-size: 24px;
+                color: #FFFFFF;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .youWillLearn {
+        padding: 100px 0;
+        h1 {
+            font-weight: 600;
+            font-size: 32px;
+            color: #FFFFFF;
+        }
+
+        td {
+            padding:60px 0 40px 30px;
+
+            li {
+                font-weight: 400;
+                font-size: 22px;
+                color: #FFFFFF;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .youWillLearn {
+        padding: 80px 0;
+        h1 {
+            font-weight: 600;
+            font-size: 28px;
+            color: #FFFFFF;
+        }
+
+        td {
+            padding:40px 0 40px 10px;
+
+            li {
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+                padding: 10px 0;
+            }
+        }
+    }
+}
