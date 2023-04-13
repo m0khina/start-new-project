@@ -33,3 +33,73 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  #courseInfo {
+    .info {
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #courseInfo {
+    .info{
+
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #courseInfo {
+    .info{
+
+    }
+  }
+}
+@media (max-width: 992px) {
+  #courseInfo {
+    .info{
+
+    }
+  }
+}
+@media (max-width: 800px) {
+  #courseInfo {
+    .info{
+
+    }
+  }
+}
+@media (max-width: 320px) {
+  #courseInfo {
+    .info {
+      position: relative;
+
+      &--titles {
+        display: flex;
+        gap: 20px;
+        margin: 35px 0;
+        &__line {
+          width: 10px;
+          height: 44px;
+          background: #FFFFFF;
+        }
+
+        h1 {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 44px;
+          color: #FFFFFF;
+        }
+      }
+      &--ul{
+        list-style-type: inherit;
+        margin-left: 50px;
+        li {
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 29px;
+          margin: 20px 0;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
