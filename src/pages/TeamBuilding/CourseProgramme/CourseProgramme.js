@@ -52,9 +52,7 @@ const CourseProgramme = () => {
                       setAcc3(false);
                       setAcc4(false);
                     }}
-                    className="courseProgramme--blocks__acc--icon__giveMe"
-                  />
-                ) : (
+                    className="courseProgramme--blocks__acc--icon__giveMe"/>) : (
                   <IoIosArrowUp
                     onClick={() => setAcc(false)}
                     className="courseProgramme--blocks__acc--icon__giveMe"

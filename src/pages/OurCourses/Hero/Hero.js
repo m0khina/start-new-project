@@ -21,12 +21,11 @@ const Hero = () => {
                                 <button className="heroOur--block__title--btns__b2">Войти</button>
                             </div>
                         </div>
-                        <img src={coffee} alt=""/>
+                        <img src={coffee} alt="img"/>
                     </div>
                 </div>
-                <img src={Book} alt="" className="heroOur--book4"/>
+                <img src={Book} alt="" className="book4"/>
             </div>
-
         </div>
     );
 };
