@@ -12,7 +12,17 @@ const Reviews = () => {
     slidesToShow: 1.57,
     slidesToScroll: 1,
     nextArrow: <img src={SliderIcon2} alt="arrow" />,
-    prevArrow:  <img src={SliderIcon1} alt="arrow" />,
+    prevArrow: <img src={SliderIcon1} alt="arrow" />,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1.145,
+          slidesToScroll: 1,
+          
+        },
+      },
+    ],
   };
 
   return (

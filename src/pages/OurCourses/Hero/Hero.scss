@@ -1,5 +1,6 @@
 #heroOur {
   padding-top: 140px;
+
   .heroOur {
     position: relative;
     background: rgba(255, 255, 255, 0.1);
@@ -7,12 +8,14 @@
     backdrop-filter: blur(7px);
     border-radius: 10px;
     z-index: 2;
+
     &--block {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 94%;
       padding: 50px 80px;
+
       &__title {
         h1 {
           font-weight: 600;
@@ -20,7 +23,8 @@
           line-height: 49px;
           color: #FFFFFF;
         }
-        &--info{
+
+        &--info {
           margin: 30px 0;
           width: 550px;
           font-weight: 400;
@@ -28,10 +32,12 @@
           line-height: 29px;
           color: #FFFFFF;
         }
-        &--btns{
+
+        &--btns {
           display: flex;
           gap: 18px;
-          &__b1{
+
+          &__b1 {
             font-weight: 400;
             font-size: 16px;
             color: #595FEB;
@@ -39,7 +45,8 @@
             background: #FFFFFF;
             border-radius: 10px;
           }
-          &__b2{
+
+          &__b2 {
             font-weight: 400;
             font-size: 16px;
             color: #FFFFFF;
@@ -52,7 +59,8 @@
         }
       }
     }
-    &--book1{
+
+    &--book1 {
       position: absolute;
       left: 1110px;
       top: -85px;
@@ -60,7 +68,8 @@
       transform: rotate(28deg);
       width: 47px;
     }
-    &--book2{
+
+    &--book2 {
       position: absolute;
       left: 240px;
       filter: blur(3px);
@@ -68,7 +77,8 @@
       transform: rotate(-40deg);
       bottom: 425px;
     }
-    &--book3{
+
+    &--book3 {
       position: absolute;
       filter: blur(1px);
       width: 140px;
@@ -76,7 +86,8 @@
       left: -130px;
       transform: rotate(-5deg);
     }
-    &--book4{
+
+    &--book4 {
       position: absolute;
       filter: blur(.8px);
       left: 1120px;
@@ -87,3 +98,4 @@
   }
 
 }
+

@@ -1,5 +1,6 @@
 #leaveReview {
     position: relative;
+
     .leaveReview {
         padding: 10px 0 260px 0;
         display: flex;
@@ -14,7 +15,7 @@
             left: -70px;
         }
 
-        &--img2{
+        &--img2 {
             position: absolute;
             filter: blur(1px);
             width: 164px;
@@ -99,6 +100,32 @@
                 textarea::placeholder {
                     color: rgba(255, 255, 255, 0.41);
                     font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:1024px) {
+    #leaveReview {
+        .leaveReview {
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 470px;
+
+                    }
+
+                    textarea{
+                        width: 470px;
+                    }
+                }
+
+                button{
+                    width: 470px;
                 }
             }
         }

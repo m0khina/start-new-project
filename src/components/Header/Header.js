@@ -74,10 +74,10 @@ const Header = () => {
             }}
           >
             <div className="header--nav">
-              <NavLink to={"/"}>Главная</NavLink>
-              <NavLink to={"/our-course"}>Наши курсы</NavLink>
-              <NavLink to={"/about-us"}>О нас</NavLink>
-              <NavLink to={"/login"}>
+              <NavLink onClick={() => setMenu(false)} to={"/"}>Главная</NavLink>
+              <NavLink onClick={() => setMenu(false)} to={"/our-course"}>Наши курсы</NavLink>
+              <NavLink onClick={() => setMenu(false)} to={"/about-us"}>О нас</NavLink>
+              <NavLink onClick={() => setMenu(false)} to={"/login"}>
                 <button className="header--towBtn">
                   <CiUser className="header--towBtn__icon" />
                   Войти
