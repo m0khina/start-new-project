@@ -1,4 +1,4 @@
-@import "./CourseBlock//CourseBlock.scss";
+@import "./CourseBlock/CourseBlock.scss";
 @import "./YouWillLearn/YouWillLearn.scss";
 @import "./CoursePhoro/CoursePhoto.scss";
 
@@ -8,7 +8,6 @@
         padding-top: 200px;
         &--title {
             border-left: 10px solid white;
-            color: white;
             padding: 0 20px;
             font-weight: 600;
             font-size: 40px;
@@ -103,6 +102,124 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+@media (max-width: 1440px) {
+    #courseProgramme{
+        .courseProgramme{
+
+        }
+    }
+}
+@media (max-width: 1200px) {
+    #courseProgramme{
+        .courseProgramme{
+
+        }
+    }
+}
+@media (max-width: 1024px) {
+    #courseProgramme    {
+        .courseProgramme {
+            padding-top: 200px;
+            &--title {
+                border-left: 10px solid white;
+                padding: 0 20px;
+                font-weight: 600;
+                font-size: 40px;
+                color: #FFFFFF;
+            }
+
+            &--blocks {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                &__acc {
+                    width: 908px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid #FFFFFF;
+                    backdrop-filter: blur(7px);
+                    border-radius: 10px;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    overflow: hidden;
+                    height: 130px;
+                    margin: 10px 0;
+
+                    &--firstBtn {
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: #FFFFFF;
+                        background: rgba(255, 255, 255, 0.1);
+                        border: 1px solid #FFFFFF;
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                    }
+
+                    &--secondBtn {
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: #595FEB;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                    }
+
+
+                    &--icon {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span {
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #FFFFFF;
+                        }
+                        &__giveMe{
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 30px;
+                        }
+
+                    }
+
+                    &--text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        width: 570px;
+                        padding: 8px 0;
+
+
+                        h1 {
+                            font-weight: 600;
+                            font-size: 28px;
+                            color: #FFFFFF;
+                            padding-bottom: 14px;
+                        }
+
+                        span {
+                            color: white;
+                            padding: 5px 0;
+                        }
+
+                        p {
+                            padding-top: 20px;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                }
             }
         }
     }
