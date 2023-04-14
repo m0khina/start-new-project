@@ -37,7 +37,6 @@
             p {
                 font-weight: 400;
                 font-size: 20px;
-                line-height: 24px;
                 color: #ffffff;
             }
         }
@@ -119,13 +118,281 @@
 
                     }
 
-                    textarea{
+                    textarea {
                         width: 470px;
                     }
                 }
 
-                button{
+                button {
                     width: 470px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    #leaveReview {
+        .leaveReview {
+
+            &--title {
+                h1 {
+                    font-size: 33px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 420px;
+
+                    }
+
+                    textarea {
+                        width: 420px;
+                    }
+                }
+
+                button {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    #leaveReview {
+        .leaveReview {
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                width: 100%;
+                padding-bottom: 80px;
+                h1 {
+                    font-size: 33px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 420px;
+
+                    }
+
+                    textarea {
+                        width: 420px;
+                    }
+                }
+
+                button {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #leaveReview {
+        .leaveReview {
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 470px;
+
+                    }
+
+                    textarea {
+                        width: 470px;
+                    }
+                }
+
+                button {
+                    width: 470px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    #leaveReview {
+        .leaveReview {
+
+            &--title {
+                h1 {
+                    font-size: 33px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 420px;
+
+                    }
+
+                    textarea {
+                        width: 420px;
+                    }
+                }
+
+                button {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    #leaveReview {
+        .leaveReview {
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                width: 100%;
+                padding-bottom: 80px;
+                h1 {
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 420px;
+
+                    }
+
+                    textarea {
+                        width: 420px;
+                    }
+                }
+
+                button {
+                    width: 420px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:450px) {
+    #leaveReview {
+        .leaveReview {
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                width: 100%;
+                padding-bottom: 80px;
+                h1 {
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 360px;
+
+                    }
+
+                    textarea {
+                        width: 360px;
+                    }
+                }
+
+                button {
+                    width: 360px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:375px) {
+    #leaveReview {
+        .leaveReview {
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                width: 100%;
+                padding-bottom: 80px;
+                h1 {
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            &--addWorlds {
+                &__name {
+                    input {
+                        width: 300px;
+
+                    }
+
+                    textarea {
+                        width: 300px;
+                    }
+                }
+
+                button {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:375px) {
+    #leaveReview {
+        .leaveReview {
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                width: 100%;
+                padding-bottom: 80px;
+                h1 {
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            &--addWorlds {
+                padding: 14px;
+                &__name {
+                    input {
+                        width: 250px;
+
+                    }
+
+                    textarea {
+                        width: 250px;
+                    }
+                }
+
+                button {
+                    width: 250px;
                 }
             }
         }
