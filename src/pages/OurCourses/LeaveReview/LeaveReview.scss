@@ -1,6 +1,5 @@
 #leaveReview {
     position: relative;
-
     .leaveReview {
         padding: 10px 0 260px 0;
         display: flex;
@@ -15,7 +14,7 @@
             left: -70px;
         }
 
-        &--img2 {
+        &--img2{
             position: absolute;
             filter: blur(1px);
             width: 164px;
@@ -106,28 +105,17 @@
     }
 }
 
-
-
-
-@media (max-width:1024px) {
-    #leaveReview {
-        .leaveReview {
-            &--addWorlds {
-                &__name {
-                    input {
-                        width: 470px;
-
-                    }
-
-                    textarea{
-                        width: 470px;
-                    }
-                }
-
-                button{
-                    width: 470px;
-                }
-            }
-        }
+@media (max-width: 1024px) {
+    #leaveReview .leaveReview--img2 {
+        left: 177px;
     }
+
+}
+@media (max-width: 768px) {
+    #leaveReview .leaveReview {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
 }
