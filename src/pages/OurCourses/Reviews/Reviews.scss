@@ -51,44 +51,6 @@
     align-items: center;
   }
 
-  .slick-current {
-    div {
-      .review--cards {
-        &__card1 {
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.136)), linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 27.1%) !important;
-          border: 1px solid #bebebe !important;
-
-          p {
-            color: rgb(180, 177, 177) !important;
-          }
-
-          h2 {
-            color: rgb(180, 177, 177) !important;
-          }
-        }
-      }
-    }
-  }
-
-
-  .slick-active {
-    div {
-      .review--cards {
-        &__card1 {
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid #ffffff;
-
-          p {
-            color: white
-          }
-
-          h2 {
-            color: #ffffff;
-          }
-        }
-      }
-    }
-  }
 
   &--cards {
     &__card1 {
@@ -103,7 +65,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        color: #7d7d7d;
+        color: #FFFFFF;
         margin: 0 0 40px 0;
       }
 
@@ -121,7 +83,7 @@
           font-weight: 500;
           font-size: 24px;
           line-height: 29px;
-          color: #848484;
+          color: #fff;
         }
       }
     }

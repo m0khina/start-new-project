@@ -17,14 +17,13 @@ const Header = () => {
     localStorage.setItem("login", JSON.stringify(true));
   };
 
-
-
   return (
     <div
       style={{
         display: !modal ? "block" : "none",
       }}
-      id="header">
+      id="header"
+    >
       <div className="container">
         <div className="header--child">
           <div className="header">
@@ -45,9 +44,30 @@ const Header = () => {
               </span>
             </div>
             <nav className="header--navbar">
-              <NavLink to={"/"}>Главная</NavLink>
-              <NavLink to={"/our-course"}>Наши курсы</NavLink>
-              <NavLink to={"/about-us"}>О нас</NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/"}
+              >
+                Главная
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/our-course"}
+              >
+                Наши курсы
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/about-us"}
+              >
+                О нас
+              </NavLink>
             </nav>
             <NavLink to={"/login"}>
               <div onClick={local} className="header--login">
@@ -73,10 +93,40 @@ const Header = () => {
             }}
           >
             <div className="header--nav">
-              <NavLink onClick={() => setMenu(false)} to={"/"}>Главная</NavLink>
-              <NavLink onClick={() => setMenu(false)} to={"/our-course"}>Наши курсы</NavLink>
-              <NavLink onClick={() => setMenu(false)} to={"/about-us"}>О нас</NavLink>
-              <NavLink onClick={() => setMenu(false)} to={"/login"}>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/"}
+              >
+                Главная
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/our-course"}
+              >
+                Наши курсы
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/about-us"}
+              >
+                О нас
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/login"}
+              >
                 <button className="header--towBtn">
                   <CiUser className="header--towBtn__icon" />
                   Войти

@@ -107,6 +107,10 @@
   #hero {
     padding: 30px 0;
 
+    .hero{
+      padding-top: 90px;
+    }
+
     .book4 {
       width: 190px;
     }
@@ -629,7 +633,6 @@
         }
 
         button {
-          width: 150px;
           height: 38px;
           font-size: 16px;
           line-height: 24px;
