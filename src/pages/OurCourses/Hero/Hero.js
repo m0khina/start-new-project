@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <div id="heroOur">
             <div className="container">
-                <div className="heroOur">
+                <div className="hero">
                     <img src={Book} alt="" className="hero--book1"/>
                     <img src={Book} alt="" className="hero--book2"/>
                     <img src={Book} alt="" className="hero--book3"/>

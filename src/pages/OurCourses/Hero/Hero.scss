@@ -1,5 +1,7 @@
 #heroOur {
-  .heroOur {
+  padding: 210px 0 0 0;
+  overflow: hidden;
+  .hero {
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #FFFFFF;
@@ -53,7 +55,7 @@
     }
     &--book1{
       position: absolute;
-      left: 1110px;
+      left: 1170px;
       top: -85px;
       filter: blur(2px);
       transform: rotate(28deg);
@@ -78,10 +80,10 @@
     &--book4{
       position: absolute;
       filter: blur(.8px);
-      left: 1120px;
+      left: 1220px;
       width: 155px;
+      bottom: -200px;
       transform: rotate(28deg);
-      bottom: 18px;
     }
   }
 

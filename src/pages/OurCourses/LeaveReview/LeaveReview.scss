@@ -104,3 +104,18 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    #leaveReview .leaveReview--img2 {
+        left: 177px;
+    }
+
+}
+@media (max-width: 768px) {
+    #leaveReview .leaveReview {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+}
