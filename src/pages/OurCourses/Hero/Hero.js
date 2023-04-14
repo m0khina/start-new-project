@@ -8,25 +8,24 @@ const Hero = () => {
     return (
         <div id="heroOur">
             <div className="container">
-                <div className="hero">
-                    <img src={Book} alt="" className="hero--book1"/>
-                    <img src={Book} alt="" className="hero--book2"/>
-                    <img src={Book} alt="" className="hero--book3"/>
-                    <div className="hero--block">
-                        <div className="hero--block__title">
+                <div className="heroOur">
+                    <img src={Book} alt="" className="heroOur--book1"/>
+                    <img src={Book} alt="" className="heroOur--book2"/>
+                    <img src={Book} alt="" className="heroOur--book3"/>
+                    <div className="heroOur--block">
+                        <div className="heroOur--block__title">
                             <h1>Наши курсы</h1>
-                            <p className="hero--block__title--info">Получайте новые знания, навыки и возможности для эффективной жизни.</p>
-                            <div className="hero--block__title--btns">
-                                <button className="hero--block__title--btns__b1">Подобрать пакет</button>
-                                <button className="hero--block__title--btns__b2">Войти</button>
+                            <p className="heroOur--block__title--info">Получайте новые знания, навыки и возможности для эффективной жизни.</p>
+                            <div className="heroOur--block__title--btns">
+                                <button className="heroOur--block__title--btns__b1">Подобрать пакет</button>
+                                <button className="heroOur--block__title--btns__b2">Войти</button>
                             </div>
                         </div>
-                        <img src={coffee} alt=""/>
+                        <img src={coffee} alt="img"/>
                     </div>
                 </div>
-                <img src={Book} alt="" className="hero--book4"/>
+                <img src={Book} alt="" className="book4"/>
             </div>
-
         </div>
     );
 };

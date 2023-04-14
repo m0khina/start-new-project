@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: space-between;
 
+
+
+
     &--title {
       width: 560px;
 
@@ -38,7 +41,6 @@
       }
     }
 
-    
   }
 
   .book1 {
@@ -48,7 +50,7 @@
 
   }
 
-  .book2{
+  .book2 {
     position: absolute;
     top: 200px;
     left: 300px;
@@ -56,24 +58,26 @@
 
   .book4 {
     position: absolute;
-    right: 50px;
-    bottom: 80px;
+    filter: blur(0.8px);
+    left: 1257px;
+    width: 152px;
+    transform: rotate(28deg);
+    bottom: -307px;
   }
 }
 
+
+
+
 @media (max-width: 1440px) {
   #hero {
-    .hero {
-
-    }
+    .hero {}
   }
 }
 
 @media (max-width: 1200px) {
   #hero {
-    .hero {
-
-    }
+    .hero {}
   }
 }
 
@@ -102,6 +106,10 @@
 @media (max-width: 992px) {
   #hero {
     padding: 30px 0;
+
+    .hero{
+      padding-top: 90px;
+    }
 
     .book4 {
       width: 190px;
@@ -625,7 +633,6 @@
         }
 
         button {
-          width: 150px;
           height: 38px;
           font-size: 16px;
           line-height: 24px;
@@ -643,6 +650,3 @@
     }
   }
 }
-
-
-

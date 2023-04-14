@@ -26,9 +26,9 @@ const CourseProgramme = () => {
             >
               <button className="courseProgramme--blocks__acc--firstBtn">
                 Модуль 1
-              </button>
-              <div className="courseProgramme--blocks__acc--text">
-                <h1>Введение</h1>
+                </button>
+                <div className="courseProgramme--blocks__acc--text">
+                  <h1>Введение</h1>
                 <span>Урок 1: Введение в курс </span>
                 <span>Урок 2: Бизнес онлайн и офлайн</span>
                 <span>Урок 3: Имидж компании</span>
@@ -52,9 +52,7 @@ const CourseProgramme = () => {
                       setAcc3(false);
                       setAcc4(false);
                     }}
-                    className="courseProgramme--blocks__acc--icon__giveMe"
-                  />
-                ) : (
+                    className="courseProgramme--blocks__acc--icon__giveMe"/>) : (
                   <IoIosArrowUp
                     onClick={() => setAcc(false)}
                     className="courseProgramme--blocks__acc--icon__giveMe"

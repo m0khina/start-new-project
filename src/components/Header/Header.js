@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./../../assets/img/logo.svg";
 import { CiUser } from "react-icons/ci";
@@ -44,9 +44,30 @@ const Header = () => {
               </span>
             </div>
             <nav className="header--navbar">
-              <NavLink to={"/"}>Главная</NavLink>
-              <NavLink to={"/our-course"}>Наши курсы</NavLink>
-              <NavLink to={"/about-us"}>О нас</NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/"}
+              >
+                Главная
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/our-course"}
+              >
+                Наши курсы
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+                to={"/about-us"}
+              >
+                О нас
+              </NavLink>
             </nav>
             <NavLink to={"/login"}>
               <div onClick={local} className="header--login">
@@ -72,10 +93,40 @@ const Header = () => {
             }}
           >
             <div className="header--nav">
-              <NavLink to={"/"}>Главная</NavLink>
-              <NavLink to={"/our-course"}>Наши курсы</NavLink>
-              <NavLink to={"/about-us"}>О нас</NavLink>
-              <NavLink to={"/login"}>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/"}
+              >
+                Главная
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/our-course"}
+              >
+                Наши курсы
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/about-us"}
+              >
+                О нас
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                  window.scroll(0,0)
+                }}
+                to={"/login"}
+              >
                 <button className="header--towBtn">
                   <CiUser className="header--towBtn__icon" />
                   Войти
