@@ -1,6 +1,6 @@
 
 #aboutUs{
-  padding: 245px 0 120px;
+  padding: 210px 0 90px;
   text-align: center;
   .aboutUs{
     position: relative;
@@ -9,8 +9,8 @@
     align-items: center;
     &--bookBg1{
       position: absolute;
-      left: 1165px;
-      top: -120px;
+      left: 1100px;
+      top: -95px;
       filter: blur(2px);
       transform: rotate(28deg);
       width: 47px;
@@ -19,16 +19,16 @@
       position: absolute;
       filter: blur(2px);
       transform: rotate(-45deg);
-      left: 233px;
+      left: 200px;
       width: 75px;
       top: 45px;
     }
     &--bgBook{
       position: absolute;
       filter: blur(1px);
-      width: 160px;
-      bottom: -110px;
-      left: -170px;
+      width: 150px;
+      bottom: -85px;
+      left: -130px;
       transform: rotate(-3deg);
     }
 

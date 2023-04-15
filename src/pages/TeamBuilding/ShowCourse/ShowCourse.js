@@ -7,7 +7,7 @@ const ShowCourse = () => {
             <div className="container">
                 <div className="info">
                     <div className="info--titles">
-                        <div className="info--titles__line"></div>
+                        <div className="info--titles__line2"></div>
                         <h1>В этом курсе мы рассмотрим:</h1>
                     </div>
                     <ul className="info--ul">
