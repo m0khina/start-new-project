@@ -223,7 +223,7 @@
 @media (max-width:992px) {
     #leaveReview {
         .leaveReview {
-
+            padding: 10px 0 210px 0;
             &--title {
                 h1 {
                     font-size: 33px;
@@ -324,7 +324,66 @@
     }
 }
 
+@media (max-width: 414px) {
+    #leaveReview .leaveReview--addWorlds {
+        width: 100%;
+    }
+    #leaveReview .leaveReview--addWorlds__name input {
+        width: 330px;
+    }
+    #leaveReview .leaveReview--addWorlds__name textarea {
+        width: 330px;
+    }
+    #leaveReview .leaveReview--addWorlds button {
+        width: 330px;
+    }
 
+}
+@media (max-width: 414px) {
+    #leaveReview .leaveReview--addWorlds {
+        width: 100%;
+    }
+    #leaveReview .leaveReview--addWorlds__name input {
+        width: 320px;
+    }
+    #leaveReview .leaveReview--addWorlds__name textarea {
+        width: 320px;
+    }
+    #leaveReview .leaveReview--addWorlds button {
+        width: 320px;
+    }
+
+}
+@media (max-width: 390px) {
+    #leaveReview .leaveReview--addWorlds {
+        width: 100%;
+    }
+    #leaveReview .leaveReview--addWorlds__name input {
+        width: 310px;
+    }
+    #leaveReview .leaveReview--addWorlds__name textarea {
+        width: 310px;
+    }
+    #leaveReview .leaveReview--addWorlds button {
+        width: 310px;
+    }
+
+}
+@media (max-width: 380px) {
+    #leaveReview .leaveReview--addWorlds {
+        width: 100%;
+    }
+    #leaveReview .leaveReview--addWorlds__name input {
+        width: 300px;
+    }
+    #leaveReview .leaveReview--addWorlds__name textarea {
+        width: 300px;
+    }
+    #leaveReview .leaveReview--addWorlds button {
+        width: 300px;
+    }
+
+}
 @media (max-width:375px) {
     #leaveReview {
         .leaveReview {
@@ -344,25 +403,39 @@
             &--addWorlds {
                 &__name {
                     input {
-                        width: 300px;
+                        width: 293px;
 
                     }
 
                     textarea {
-                        width: 300px;
+                        width: 293px;
                     }
                 }
 
                 button {
-                    width: 300px;
+                    width: 293px;
                 }
             }
         }
     }
 }
 
+@media (max-width: 360px) {
+    #leaveReview .leaveReview--addWorlds {
+        width: 100%;
+    }
+    #leaveReview .leaveReview--addWorlds__name input {
+        width: 284px;
+    }
+    #leaveReview .leaveReview--addWorlds__name textarea {
+        width: 284px;
+    }
+    #leaveReview .leaveReview--addWorlds button {
+        width: 284px;
+    }
 
-@media (max-width:375px) {
+}
+@media (max-width:320px) {
     #leaveReview {
         .leaveReview {
             flex-direction: column;
@@ -382,17 +455,17 @@
                 padding: 14px;
                 &__name {
                     input {
-                        width: 250px;
+                        width: 260px;
 
                     }
 
                     textarea {
-                        width: 250px;
+                        width: 260px;
                     }
                 }
 
                 button {
-                    width: 250px;
+                    width: 260px;
                 }
             }
         }
