@@ -147,7 +147,7 @@
   }
   #courses .courses--card{
     padding: 20px;
-    width: 372px;
+    width: 402px;
   }
   #courses .courses--card h3{
     font-weight: 400;
@@ -172,8 +172,26 @@
 }
 @media (max-width: 450px) {
   #courses .courses--card {
-    width: 280px;
+    width: 100%;
   }
+}
+@media (max-width: 400px) {
+  #courses .courses--card {
+    padding: 13px;
+  }
+  #courses .courses--card a {
+    font-size: 13px;
+    line-height: 10px;
+  }
+  #courses .courses--card__imgCourse{
+    margin: 5px 0 5px 0;
+  }
+  #courses .courses--title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
   #courses .courses--card h3 {
     font-weight: 300;
     font-size: 19px;
@@ -213,25 +231,10 @@
     width: 90px;
     bottom: 13px;
   }
-}
-@media (max-width: 400px) {
-  #courses .courses--card {
-    padding: 13px;
-    width: 250px;
-  }
-  #courses .courses--card a {
-    font-size: 13px;
-    line-height: 10px;
-  }
-  #courses .courses--card__imgCourse{
-    margin: 5px 0 5px 0;
-  }
   #courses .courses--btnMain {
     line-height: 8px;
     margin: 13px 0;
     padding: 13px 8px;
   }
-  #courses .courses--title {
-    font-size: 28px;
-  }
+
 }

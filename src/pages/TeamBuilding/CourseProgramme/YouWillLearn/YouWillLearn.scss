@@ -33,70 +33,29 @@
     .youWillLearn {
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+    .youWillLearn h1 {
+        font-size: 30px;
+    }
+    .youWillLearn td li {
+        font-size: 18px;
+    }
     .youWillLearn {
+        padding: 47px 0;
+    }
+    .youWillLearn td {
+        padding: 40px 0 40px 100px;
     }
 }
-@media (max-width: 470px) {
-    .youWillLearn {
-        padding: 100px 0;
-        h1 {
-            font-weight: 600;
-            font-size: 32px;
-            color: #FFFFFF;
-        }
-
-        td {
-            padding:60px 0 40px 30px;
-
-            li {
-                font-weight: 400;
-                font-size: 24px;
-                color: #FFFFFF;
-                padding: 10px 0;
-            }
-        }
+@media (max-width: 576px) {
+    .youWillLearn td {
+        padding: 20px 0 20px 60px;
     }
 }
-@media (max-width: 400px) {
-    .youWillLearn {
-        padding: 100px 0;
-        h1 {
-            font-weight: 600;
-            font-size: 32px;
-            color: #FFFFFF;
-        }
-
-        td {
-            padding:60px 0 40px 30px;
-
-            li {
-                font-weight: 400;
-                font-size: 22px;
-                color: #FFFFFF;
-                padding: 10px 0;
-            }
-        }
+@media (max-width: 450px) {
+    .youWillLearn h1 {
+        font-size: 27px;
     }
 }
 @media (max-width: 320px) {
-    .youWillLearn {
-        padding: 80px 0;
-        h1 {
-            font-weight: 600;
-            font-size: 28px;
-            color: #FFFFFF;
-        }
-
-        td {
-            padding:40px 0 40px 10px;
-
-            li {
-                font-weight: 400;
-                font-size: 20px;
-                color: #FFFFFF;
-                padding: 10px 0;
-            }
-        }
-    }
 }
