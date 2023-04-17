@@ -3,16 +3,30 @@ import aboutBook from "./../../../assets/img/aboutBook.png";
 import bookStuty from "./../../../assets/img/bookStuty.png";
 import book from "./../../../assets/img/logo.svg";
 import { NavLink } from "react-router-dom";
-import { Data } from "../../../fakeBackEnd/FakeHomeBook/Index";
+import { HomeBook } from "../../../fakeBackEnd/FakeHomeBook/Index";
 
 const Staty = () => {
-  const blockX = Data.HomeBook.slice(0,1).map((el) => el.block.slice(0,3).map((t) => t));
-  const blockY = Data.HomeBook.slice(0,1).map((el) => el.block.slice(0,2).map((t) => t));
-  const blockOne = Data.HomeBook.slice(0,1).map((el) => el.block.slice(0,1).map((t) => t));
+  const [selectedTab, setSelectedTab] = useState(1);
+  let  blockX = HomeBook.filter(
+    (el) => selectedTab === el.id && el.block.slice(0, 3).map((t) => t)
+  );
+  const blockY = HomeBook.filter(
+    (el) => selectedTab === el.id && el.block.slice(0, 2).map((t) => t)
+  );
+  const blockOne = HomeBook.filter(
+    (el) => selectedTab === el.id && el.block.slice(0, 1).map((t) => t)
+  );
 
-  const btn = Data.HomeBook.map((el) => el);
+  const btn = HomeBook.map((el) => el);
 
-  console.log(btn);
+  const handleTabClick = (index) => {
+    setSelectedTab(index);
+  };
+
+  blockX.map(el => el.block)
+
+  
+
   return (
     <div id="books">
       <div className="container">
@@ -23,13 +37,25 @@ const Staty = () => {
           <img src={book} className="books--img4" alt="" />
           <div className="books--tabs">
             {btn.map((el) => (
-              <div className="books--tabs__btn">{el.title}</div>
+              <div
+                onClick={() => {
+                  handleTabClick(el.id);
+                }}
+                style={{
+                  background: selectedTab === el.id ? "while" : ""
+                }}
+                className={
+                  selectedTab === el.id ? "books--tabs__btnActive" : "books--tabs__btn"
+                }
+              >
+                {el.title}
+              </div>
             ))}
           </div>
 
           <div className="books--block">
             {blockX.map((el) =>
-              el.map((t) => (
+              el.block.slice(0,3).map((t) => (
                 <div className="books--block__aboutBook">
                   <h2>{t.title}</h2>
                   <div className="books--block__aboutBook--start">
@@ -52,7 +78,7 @@ const Staty = () => {
           <div className="books--startBlock">
             <div className="books--startBlock__firstBlock">
               {blockY.map((el) =>
-                el.map((el) => (
+                el.block.slice(0,2).map((el) => (
                   <div className="books--startBlock__firstBlock--aboutBook">
                     <h2>{el.title}</h2>
                     <div className="books--startBlock__firstBlock--aboutBook__start">
@@ -74,7 +100,7 @@ const Staty = () => {
             <div className="firstBlockTrue">
               <div className="books--startBlock__centerBooks">
                 {blockOne.map((el) =>
-                  el.map((el) => (
+                  el.block.slice(0,1).map((el) => (
                     <div className="books--startBlock__centerBooks--aboutBook">
                       <h2>{el.title}</h2>
                       <div className="books--startBlock__centerBooks--aboutBook__start">
@@ -101,7 +127,7 @@ const Staty = () => {
             </div>
             <div className="books--startBlock__firstBlock">
               {blockY.map((el) =>
-                el.map((el) => (
+                el.block.slice(0,2).map((el) => (
                   <div className="books--startBlock__firstBlock--aboutBook">
                     <h2>{el.title}</h2>
                     <div className="books--startBlock__firstBlock--aboutBook__start">
@@ -124,7 +150,7 @@ const Staty = () => {
           <div className="secondBlockFalse">
             <div className="books--startBlock__centerBooks">
               {blockOne.map((el) =>
-                el.map((el) => (
+                el.block.slice(0,1).map((el) => (
                   <div className="books--startBlock__centerBooks--aboutBook">
                     <h2>{el.title}</h2>
                     <div className="books--startBlock__centerBooks--aboutBook__start">
