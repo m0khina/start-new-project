@@ -8,7 +8,7 @@ import { OurApi } from "../../../fakeBackEnd/OurBack";
 const Courses = () => {
   return (
     <div>
-      <div id="courses">
+      {/* <div id="courses">
         <div className="container">
           <div className="courses">
             <h2 className="courses--title">Курсы</h2>
@@ -43,7 +43,7 @@ const Courses = () => {
             </center>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
