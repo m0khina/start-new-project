@@ -1,14 +1,24 @@
 import bookImg from "./../../assets/img/aboutBook.png";
 import { IoIosArrowForward } from "react-icons/io";
-import { Data } from "./../../fakeBackEnd/FakeHomeBook/Index";
+import { HomeBook } from "./../../fakeBackEnd/FakeHomeBook/Index";
 import { useState } from "react";
 
 const Books = () => {
-  const block = Data.HomeBook.slice(0, 1).map((el) => el.block.map((t) => t));
+
+const [selectedTab, setSelectedTab] = useState(1);
+
+  const block = HomeBook.filter(
+    (el) => selectedTab === el.id && el.block.map((t) => t)
+  );
+
 
   console.log(block);
 
-  const btn = Data.HomeBook.map((el) => el);
+  const btn = HomeBook.map((el) => el);
+
+  const handleTabClick = (index) => {
+    setSelectedTab(index);
+  };
 
   const [book, setBook] = useState([1, 2, 3, 4]);
 
@@ -22,13 +32,22 @@ const Books = () => {
           <h1 className="allBooks--title">Статьи</h1>
           <div className="allBooks--tabs">
             {btn.map((el) => (
-              <button>{el.title}</button>
+              <button 
+                onClick={() => {
+                  handleTabClick(el.id);
+                }}
+                className={
+                  selectedTab === el.id ? "allBooks--tabs__btnActive": "allBooks--tabs__btn"
+                }
+              >
+                {el.title}
+              </button>
             ))}
           </div>
           <div className="allBooks--block">
             <div className="allBooks--block__first">
               {block.map((el) =>
-                el.map((el) => (
+                el.block.map((el) => (
                   <div className="allBooks--block__first--aboutBooks">
                     <div className="allBooks--block__first--aboutBooks__title">
                       <h1>{el.title}</h1>
@@ -52,7 +71,7 @@ const Books = () => {
             </div>
             <div className="allBooks--block__two">
               {block.map((el) =>
-                el.map((el) => (
+                el.block.map((el) => (
                   <div className="allBooks--block__two--aboutBooks">
                     <h1 className="allBooks--block__two--aboutBooks__title">
                       {el.title}
@@ -75,7 +94,7 @@ const Books = () => {
             </div>
             <div className="allBooks--block__two">
               {block.map((el) =>
-                el.map((el) => (
+                el.block.map((el) => (
                   <div className="allBooks--block__two--aboutBooks">
                     <h1 className="allBooks--block__two--aboutBooks__title">
                       {el.title}
