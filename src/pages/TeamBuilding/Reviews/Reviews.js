@@ -73,7 +73,7 @@ const Reviews = () => {
 
           <div onClick={()=> {setWell3(!well3)}} className="reviewCourse--block">
             <div className="reviewCourse--block__about">
-              <div className="reviewCourse--block__about--user">c</div>
+              <div className="reviewCourse--block__about--user">C</div>
               <div className="reviewCourse--block__about--name">
                 <h2>Muslim Bolot</h2>
                 <h4>09.09.22</h4>
