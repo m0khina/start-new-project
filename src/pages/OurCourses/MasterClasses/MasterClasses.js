@@ -7,7 +7,7 @@ import { OurApi } from "../../../fakeBackEnd/OurBack";
 const MasterClasses = () => {
   return (
     <div id="mk">
-      {/* <div className="container">
+      <div className="container">
         <div className="mk">
           <img src={Book} alt="" className="mk--book" />
           <h2 className="mk--title">Мастер классы</h2>
@@ -36,7 +36,7 @@ const MasterClasses = () => {
             <button className="mk--btnMain">Смотреть все мастер классы</button>
           </center>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
