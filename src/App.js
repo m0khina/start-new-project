@@ -10,6 +10,7 @@ import Buy from "./pages/Home/Follow/Buy/Buy"
 import OurCourse from "./pages/OurCourses/OurCourse";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import TeamBuilding from "./pages/TeamBuilding/TeamBuilding";
+import PrivateOffice from "./pages/PrivateOffice/PrivateOffice";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/about-us" element={<AboutUs/>}/>
                 <Route path="/team-building" element={<TeamBuilding/>}/>
                 <Route path="/team-building" element={<TeamBuilding/>}/>
+                <Route  path="/private-office/all"  element={<PrivateOffice/>}/>
             </Routes>
             <Footer/>
         </div>

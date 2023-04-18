@@ -12,6 +12,7 @@
 @import "./pages/Home/Follow/Buy/Buy";
 @import "./pages/OurCourses/OurCourses";
 @import "./pages/TeamBuilding/TeamBuilding";
+@import"./pages/PrivateOffice/PrivateOffice";
 
 
 
@@ -54,7 +55,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.App--bg{
+.App--bg {
   background: linear-gradient(152.23deg, #D78B59 6.77%, #595FEB 47.79%);
   min-height: 100vh;
   position: fixed;
