@@ -1,59 +1,72 @@
 import React, { useState } from "react";
 import Book from "./../../../assets/img/logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 
 const FirstLogin = () => {
-
-
-
   const dispatch = useDispatch();
 
   const local = () => {
+    window.scroll(0, 0);
     dispatch({ type: "OPEN_LOGIN", payload: false });
     localStorage.setItem("login", JSON.stringify(false));
   };
 
   //////////////////////////////////////
 
-  const [email, setEmail] = useState("");
-  const [passw, setPassw] = useState("");
-  const [dataInput, setDataInput] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [eye, setEye] = useState(false);
   const [errors, setErrors] = useState(false);
-  const [data, setData] = useState(false);
-  //   const submitThis = () => {
-  //     const info = { email: email, passw: passw };
-  //     setDataInput([info]);
-  //   };
 
-  const Users = [
+  const nav = useNavigate()
+
+  const database = [
     {
-      name: "Syrgabek",
-      poss: "1234",
+      username: "1",
+      password: "1",
     },
     {
-      name: "Aiba",
-      poss: "1234",
+      username: "Syrgabek",
+      password: "0131",
     },
   ];
 
-  const getUsers = () => {
-    if (email !== Users.name) {
-      setErrors(true);
-    } else if (passw !== Users.poss) {
+  const navbar = () => {
+    var { uname, pass } = document.forms[0];
+    database.find((user) => {
+      if(user.username === uname.value && user.password === pass.value) {
+        nav("/")
+      }
+      return ""
+    });
+
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    var { uname, pass } = document.forms[0];
+
+    const userData = database.find((user) => user.username === uname.value);
+
+    if (userData) {
+      if (userData.password !== pass.value) {
+        setErrors(true);
+        nav("/")
+      } else {
+        setErrors(false);
+      }
+    } else {
       setErrors(true);
     }
   };
 
+ 
   const getPage = (
     <form
       action=""
-      onSubmit={() => {
-        // submitThis()
-        getUsers();
-      }}
+      onSubmit={handleSubmit}
       className="firstLogin--block__login"
     >
       <h2>Войти в аккаунт</h2>
@@ -63,11 +76,10 @@ const FirstLogin = () => {
         }}
         className="IWillForgetYou"
         type="text"
-        name="email"
+        name="uname"
         id="email"
         placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={() => setErrors(false)}
       />
       <div>
         <input
@@ -76,11 +88,10 @@ const FirstLogin = () => {
           }}
           className="forgetMe"
           type={!eye ? "password" : "rf"}
-          name="passw"
+          name="pass"
           id="passw"
-          value={passw}
           placeholder="Password"
-          onChange={(e) => setPassw(e.target.value)}
+          onChange={() => setErrors(false)}
         />
         {eye ? (
           <BsEyeSlash
@@ -94,7 +105,7 @@ const FirstLogin = () => {
           />
         )}
       </div>
-      <button>Войти</button>
+        <button onClick={navbar}>Войти</button>
       <h3>Забыли пароль?</h3>
     </form>
   );
@@ -108,7 +119,7 @@ const FirstLogin = () => {
               <img onClick={local} src={Book} alt="" />
             </NavLink>
             <h1>SELF DEVELOPING SCHOOL</h1>
-            {!data && getPage}
+            {isSubmitted ? "greate" : getPage}
           </div>
         </div>
       </div>
