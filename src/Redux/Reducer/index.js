@@ -11,11 +11,6 @@ export const Reducer = (state = initialState, action) => {
                 ...state,
                 login: action.payload
             }
-
-        case "CLOSE_LOGIN":
-            return {
-                login: false
-            }
         default: return state
     }
 }

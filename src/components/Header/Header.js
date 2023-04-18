@@ -12,11 +12,13 @@ const Header = () => {
   const dispatch = useDispatch();
 
   const local = () => {
-    let log = JSON.parse(localStorage.getItem("login")) || [];
-    dispatch({ type: "OPEN_LOGIN", payload: log });
+    dispatch({ type: "OPEN_LOGIN", payload: true });
     localStorage.setItem("login", JSON.stringify(true));
   };
 
+
+
+console.log(modal)
   return (
     <div
       style={{
