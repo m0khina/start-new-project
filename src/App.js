@@ -15,10 +15,6 @@ import PrivateOffice from "./pages/PrivateOffice/PrivateOffice";
 
 function App() {
 
-
-
-    const modal = useSelector(state => state.login)
-
     return (
         <div className="App">
             <div className="App--bg"/>

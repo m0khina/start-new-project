@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "./../../assets/img/logo.svg";
 import { CiUser } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,21 +9,24 @@ const Header = () => {
 
   const modal = useSelector((state) => state.login);
 
+  const nav = useNavigate()
+
   const dispatch = useDispatch();
 
   const local = () => {
     dispatch({ type: "OPEN_LOGIN", payload: true });
     localStorage.setItem("login", JSON.stringify(true));
+    nav("/login")
   };
+
+// const modal = localStorage.getItem("login")
 
 
 
 console.log(modal)
   return (
     <div
-      style={{
-        display: !modal ? "block" : "none",
-      }}
+      hidden={modal}
       id="header"
     >
       <div className="container">
@@ -71,14 +74,12 @@ console.log(modal)
                 О нас
               </NavLink>
             </nav>
-            <NavLink to={"/login"}>
               <div onClick={local} className="header--login">
                 <button className="header--login__btn">
                   <CiUser className="header--login__btn--icon" />
                   Войти
                 </button>
               </div>
-            </NavLink>
             <div onClick={() => setMenu(!menu)} className="header--menu">
               <div className="header--menu__parentMenu">
                 <div className={menu ? "header--menu__parentMenu--one" : ""} />

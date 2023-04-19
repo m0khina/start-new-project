@@ -14,13 +14,11 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
-    const use = useSelector(state => state.login)
+    const modal = localStorage.getItem("login")
 
 
     return (
-        <div style={{
-            display: !use ? "block" : "none"
-        }} id="footer">
+        <div hidden={modal} id="footer">
             <div className="container">
                 <div className="footer">
                     <img className='footer--img2' src={bg} alt='img' />
