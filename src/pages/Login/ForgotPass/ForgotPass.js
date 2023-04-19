@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Forgot = () => {
+const ForgotPass = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Forgot = () => {
     );
 };
 
-export default Forgot;
+export default ForgotPass;
