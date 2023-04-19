@@ -8,9 +8,17 @@ const FirstLogin = () => {
   const dispatch = useDispatch();
 
   const local = () => {
-    window.scroll(0, 0);
-    dispatch({ type: "OPEN_LOGIN", payload: false });
-    localStorage.setItem("login", JSON.stringify(false));
+
+    var { uname, pass } = document.forms[0];
+    database.find((user) => {
+      if (user.username === uname.value && user.password === pass.value) {
+        nav("/")
+        window.scroll(0, 0);
+        dispatch({ type: "OPEN_LOGIN", payload: false });
+        localStorage.setItem("login", JSON.stringify(false));
+      }
+      return ""
+    });
   };
 
   //////////////////////////////////////
@@ -19,7 +27,8 @@ const FirstLogin = () => {
   const [eye, setEye] = useState(false);
   const [errors, setErrors] = useState(false);
 
-  const nav = useNavigate()
+  const nav = useNavigate();
+
 
   const database = [
     {
@@ -32,16 +41,7 @@ const FirstLogin = () => {
     },
   ];
 
-  const navbar = () => {
-    var { uname, pass } = document.forms[0];
-    database.find((user) => {
-      if(user.username === uname.value && user.password === pass.value) {
-        nav("/")
-      }
-      return ""
-    });
 
-  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -53,7 +53,6 @@ const FirstLogin = () => {
     if (userData) {
       if (userData.password !== pass.value) {
         setErrors(true);
-        nav("/")
       } else {
         setErrors(false);
       }
@@ -62,7 +61,6 @@ const FirstLogin = () => {
     }
   };
 
- 
   const getPage = (
     <form
       action=""
@@ -105,7 +103,7 @@ const FirstLogin = () => {
           />
         )}
       </div>
-        <button onClick={navbar}>Войти</button>
+      <button onClick={local}>Войти</button>
       <h3>Забыли пароль?</h3>
     </form>
   );
