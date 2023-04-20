@@ -1,0 +1,723 @@
+#forgotPass{
+  padding: 100px  0;
+  .forgotPass{
+   display: flex;
+    align-items: center;
+     justify-content: center;
+    &--login{
+     &__block{
+       &--self{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         padding: 56px 0;
+         h1{
+           font-weight: 500;
+           font-size: 28px;
+           line-height: 34px;
+           color: #FFFFFF;
+
+         }
+
+         img{
+
+           text-align: center;
+
+         }
+       }
+
+     }
+      &__blocksTwo{
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+        width: 400px;
+        height: 329px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        h3{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          padding: 15px 0 0 0;
+
+        }
+         &--task{
+           display: flex;
+           align-items: center;
+            flex-direction: column;
+
+           input{
+             width: 360px;
+             height: 40px;
+              background: none;
+             border: 1px solid #ffff;
+             border-radius: 10px;
+             padding-left: 10px;
+             color:#FFFFFF;
+              input::placeholder{
+                color: #FFFFFF;
+              }
+           }
+           button{
+             width: 360px;
+             height: 40px;
+             background: #FFFFFF;
+             border-radius: 10px;
+             font-weight: 500;
+             font-size: 20px;
+             line-height: 24px;
+             color: #6363DF;
+             margin: 18px 0 0 0;
+             &:hover{
+                transform: scale(1);
+              }
+           }
+         }
+        h1{
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+          padding: 27px 0 15px 0;
+
+        }
+        p{
+          width: 267px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          padding: 4px 0 28px 0;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+  }
+  .forgetImage{
+    position: relative;
+     &--books{
+       position: absolute;
+       top: 18px;
+       left: 1186px;
+     }
+    &--books2{
+      position: absolute;
+      top: 1px;
+      left: -74px;
+
+    }
+    &--books3{
+      position: absolute;
+      top: -481px;
+      left: 32px;
+
+    } &--books4{
+      position: absolute;
+            top: -524px;
+            left: 1149px;
+
+    }
+
+  }
+}
+@media (max-width: 1440px) {
+
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+         &__blocksTwo{
+           &--task{
+
+           }
+         }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        top: 1px;
+        left: 879px;
+
+      }
+
+      &--books2{
+        position: absolute;
+        top: 1px;
+        left: -103px;
+
+      }
+
+      &--books3{
+        position: absolute;
+        top: -372px;
+        left: 842px;
+      }
+      &--books4{
+        position: absolute;
+        top: -372px;
+        left: 1px;
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 1140px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 1024px) {
+  #forgotPass{
+
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        left: 732px;
+
+
+      }
+      &--books2{
+        position: absolute;
+        top: 1px;
+        left: -54px;
+      }
+      &--books3{
+        position: absolute;
+        top: -372px;
+        left: 752px;
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 999px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+
+      }
+      &--books2{
+        position: absolute;
+        left: 113px;
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 992px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        left: 749px;
+        width: 16%;
+        top: 73px;
+      }
+      &--books2{
+        position: absolute;
+        left: -107px;
+        width: 12%;
+
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        left: 469px;
+
+
+      }
+      &--books2{
+        left: -25px;
+        width: 12%;
+
+      }
+      &--books3{
+        position: absolute;
+        left: -25px;
+
+
+      }
+      &--books4{
+        position: absolute;
+        top: -272px;
+        left: -15px;
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 450px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        left: 313px;
+
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 400px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+            h1{
+              font-size: 24px;
+            }
+
+          }
+        }
+        &__blocksTwo{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 370px;
+          height: 329px;
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 390px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 35px 0;
+
+            h1{
+              font-size: 18px;
+            }
+
+          }
+        }
+        &__blocksTwo{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 340px;
+          height: 329px;
+          &--task{
+            input{
+              width: 310px;
+              height: 40px;
+            }
+            button{
+              width: 310px;
+              height: 40px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 380px) {
+  #forgotPass{
+    .forgetImage{
+      position: relative;
+      &--books{
+        position: absolute;
+        left: 248px;
+        top: 1px;
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          p{
+            padding: 4px 0 12px 0;
+
+          }
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 375px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgetImage{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 360px) {
+  #forgotPass{
+    .forgetImage{
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          width: 324px;
+          height: 329px;
+          &--task{
+
+            input{
+              width: 274px;
+
+            }
+            button{
+              width: 274px;
+            font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 320px) {
+  #forgotPass{
+    .forgetImage{
+      display: none;
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+      &--books{
+
+      }
+    }
+    .forgotPass{
+      &--login{
+        &__block{
+          &--self{
+
+          }
+        }
+        &__blocksTwo{
+          width: 301px;
+          height: 329px;
+
+          &--task{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+

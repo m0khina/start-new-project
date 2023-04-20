@@ -11,6 +11,7 @@ import OurCourse from "./pages/OurCourses/OurCourse";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import TeamBuilding from "./pages/TeamBuilding/TeamBuilding";
 import PrivateOffice from "./pages/PrivateOffice/PrivateOffice";
+import ForgotPass from "./pages/Login/ForgotPass/ForgotPass";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/team-building" element={<TeamBuilding/>}/>
                 <Route path="/team-building" element={<TeamBuilding/>}/>
                 <Route  path="/private-office/all"  element={<PrivateOffice/>}/>
+                <Route path="/forgot-pass" element={<ForgotPass/>}/>
             </Routes>
             <Footer/>
         </div>

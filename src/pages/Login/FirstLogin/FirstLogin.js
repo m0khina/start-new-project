@@ -8,23 +8,17 @@ const FirstLogin = () => {
   const dispatch = useDispatch();
 
   const local = () => {
+
     var { uname, pass } = document.forms[0];
     database.find((user) => {
       if (user.username === uname.value && user.password === pass.value) {
-        nav("/");
+        nav("/")
         window.scroll(0, 0);
         dispatch({ type: "OPEN_LOGIN", payload: false });
         localStorage.setItem("login", JSON.stringify(false));
       }
-      return "";
+      return ""
     });
-  };
-
-  const navbar = () => {
-    nav("/");
-    window.scroll(0, 0);
-    dispatch({ type: "OPEN_LOGIN", payload: false });
-    localStorage.setItem("login", JSON.stringify(false));
   };
 
   //////////////////////////////////////
@@ -34,6 +28,7 @@ const FirstLogin = () => {
   const [errors, setErrors] = useState(false);
 
   const nav = useNavigate();
+
 
   const database = [
     {
@@ -45,6 +40,8 @@ const FirstLogin = () => {
       password: "0131",
     },
   ];
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -107,7 +104,7 @@ const FirstLogin = () => {
         )}
       </div>
       <button onClick={local}>Войти</button>
-      <h3>Забыли пароль?</h3>
+      <h3 onClick={()=> nav("/forgot-pass")}>Забыли пароль?</h3>
     </form>
   );
 
@@ -116,7 +113,9 @@ const FirstLogin = () => {
       <div className="container">
         <div className="firstLogin">
           <div className="firstLogin--block">
-            <img onClick={navbar} src={Book} alt="" />
+            <NavLink to={"/"}>
+              <img onClick={local} src={Book} alt="" />
+            </NavLink>
             <h1>SELF DEVELOPING SCHOOL</h1>
             {isSubmitted ? "greate" : getPage}
           </div>
