@@ -46,7 +46,7 @@ const OpenAcc = () => {
                     <div>
                         <h4>Потеряю ли я оставшесея время если перейду на другой до окончания этого?</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi eius enim
-                            fuga, id laboriosam laudantium magni quidem sed voluptates?</p>
+                            fuga, id laboriosam laudantium magni   dfdd  quidem sed voluptates?</p>
                     </div>
 
                     <MdArrowBackIosNew style={{
