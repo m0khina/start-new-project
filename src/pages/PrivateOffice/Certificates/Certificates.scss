@@ -1,0 +1,93 @@
+#cer {
+  height: 420px;
+
+  .cer {
+    &--hero {
+      padding: 30px 0;
+
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+
+    &--all {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &__left {
+        display: flex;
+
+        &--data {
+          margin-right: 40px;
+
+          h5 {
+            color: white;
+            padding: 16px 0;
+          }
+
+          h6 {
+            color: white;
+            padding: 10px 0;
+          }
+        }
+
+        &--text {
+          h5 {
+            color: white;
+            padding: 16px 0;
+          }
+
+          h6 {
+            padding: 10px 0;
+            color: white;
+          }
+        }
+      }
+
+      &__right {
+        display: flex;
+
+        &--status {
+          margin-right: 40px;
+
+          h5 {
+            color: white;
+            padding: 16px 0;
+          }
+
+          h6 {
+            color: white;
+            padding: 10px 0;
+          }
+        }
+
+        &--see {
+          h5 {
+            color: white;
+            padding: 16px 0;
+          }
+
+          &__icon {
+            padding: 12px 0;
+            display: flex;
+
+            a {
+              color: white;
+              font-size: 20px;
+              margin: 0 13px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

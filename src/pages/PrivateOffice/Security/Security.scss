@@ -1,0 +1,118 @@
+#security {
+  .security {
+    &--hero {
+      padding: 30px 0;
+
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+
+    &--block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px 0;
+
+      &__inputs {
+        &--one {
+          p {
+            color: white;
+          }
+
+          input {
+            width: 380px;
+            height: 35px;
+            background: none;
+            outline: none;
+            border: 1px solid white;
+
+            &::placeholder {
+              padding-left: 15px;
+              color: white;
+              font-size: 13px;
+            }
+          }
+        }
+
+        &--two {
+          padding: 16px 0;
+
+          p {
+            color: white;
+          }
+
+          input {
+            width: 380px;
+            height: 35px;
+            background: none;
+            outline: none;
+            border: 1px solid white;
+
+            &::placeholder {
+              padding-left: 15px;
+              color: white;
+              font-size: 13px;
+            }
+          }
+        }
+
+        &--three {
+          p {
+            color: white;
+          }
+
+          input {
+            width: 380px;
+            height: 35px;
+            background: none;
+            outline: none;
+            border: 1px solid white;
+
+            &::placeholder {
+              padding-left: 15px;
+              color: white;
+              font-size: 13px;
+            }
+          }
+        }
+
+        &--btn {
+          padding: 40px 0;
+
+          button {
+            color: #595FEB;
+            width: 240px;
+            height: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.29);
+            background: white;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      &__text {
+        width: 40%;
+
+        h6 {
+          color: white;
+          font-size: 16px;
+        }
+
+        p {
+          padding-top: 15px;
+          color: white;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

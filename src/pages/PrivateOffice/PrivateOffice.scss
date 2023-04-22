@@ -6,3 +6,51 @@
 @import "./Package/Package";
 @import "./Pay/Pay";
 @import "./Security/Security";
+
+#office {
+  padding: 60px 0;
+
+  .office {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &--nav {
+      width: 250px;
+      height: 420px;
+      border: 1px solid white;
+
+      .active {
+        div {
+          border-left: 5px solid white;
+          background: rgba(255, 255, 255, 0.35);
+        }
+      }
+
+      &__link {
+        div {
+          width: 100%;
+          height: 60px;
+          border: 1px solid white;
+          background: rgba(255, 255, 255, 0.35);
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            border-left: 5px solid white;
+            background: rgba(255, 255, 255, 0.45)
+          }
+        }
+      }
+    }
+
+    &--routes {
+      width: 70%;
+      background: rgba(255, 255, 255, 0.35);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+#package {
+  height: 420px;
+
+  .package {
+    &--hero {
+      padding: 30px 0;
+
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+
+    &--all {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &__left {
+        display: flex;
+
+        &--data {
+          margin-right: 40px;
+
+          h6 {
+            color: white;
+            padding: 15px 0;
+          }
+        }
+
+        &--pack {
+          h6 {
+            padding: 15px 0;
+            color: white;
+          }
+        }
+      }
+
+      &__right {
+        display: flex;
+
+        &--status {
+          h6 {
+            color: white;
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+#all{
+  .all{
+    h1{
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+      color: #FFFFFF;
+    }
+    &--common{
+      padding: 40px 0 50px 0;
+      h1{
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+      }
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+      }
+    }
+    &--per{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 0 10px 0;
+      &__name{
+        padding: 15px 0;
+        p{
+          color: white;
+        }
+        input{
+          outline: none;
+          background: transparent;
+          border: 1.2px solid rgba(255, 255, 255, 0.86);
+          width: 350px;
+          height: 30px;
+          &::placeholder{
+            color: white;
+            font-size: 12px;
+            padding-left: 16px;
+          }
+        }
+      }
+      &__email{
+        padding: 15px 0;
+        p{
+          color: white;
+        }
+        input{
+          outline: none;
+          background: transparent;
+          border: 1.2px solid rgba(255, 255, 255, 0.86);
+          width: 350px;
+          height: 30px;
+          &::placeholder{
+            color: white;
+            font-size: 12px;
+            padding-left: 16px;
+          }
+        }
+      }
+      &__number{
+        padding: 15px 0;
+        p{
+          color: white;
+        }
+        input{
+          outline: none;
+          background: transparent;
+          border: 1.2px solid rgba(255, 255, 255, 0.86);
+          width: 350px;
+          height: 30px;
+          &::placeholder{
+            color: white;
+            font-size: 12px;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+    &--save{
+      padding: 20px 0 40px 0;
+      &__one{
+        width: 240px;
+        height: 35px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 2px;
+        background: rgba(255, 255, 255, 0.29);
+        margin-right: 20px;
+      }
+      &__two{
+        color: #595FEB;
+        width: 240px;
+        height: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.29);
+        background: white;
+        border-radius: 2px;
+      }
+    }
+  }
+}
